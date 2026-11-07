@@ -3,10 +3,16 @@
 A public Claude skill that compares a user's resume against job postings and ranks the skills they're missing. Meant for anyone, in any field, on any Claude plan.
 
 ## Repo layout
-- `resume-skill-gap/SKILL.md` — the skill itself (the only file users upload)
-- `README.md` — install steps, example prompt, example output, limitations
-- `tests/` — sample resumes, postings, and expected outputs
-- `dist/` — built zip for upload (generated; don't edit by hand)
+```
+skill/                  # the Claude skill
+  resume-skill-gap/     # uploadable folder (name matches SKILL.md frontmatter)
+    SKILL.md
+  tests/                # sample resumes, postings, expected outputs
+  dist/                 # built zip (generated; don't edit by hand)
+service/                # Python backend (planned)
+docs/                   # design notes
+README.md               # covers both skill and service
+```
 
 ## Rules for the skill
 - Nothing personal or role-specific in SKILL.md. Never include real resumes, names, or contact info anywhere in the repo; test data must be fictional.
@@ -20,10 +26,10 @@ A public Claude skill that compares a user's resume against job postings and ran
 required 1.0, unspecified 0.75, preferred 0.5, summed across distinct postings.
 
 ## When changing SKILL.md
-1. Run all three test cases in `tests/` (engineer, nurse, marketer) and compare against expected outputs.
+1. Run all three test cases in `skill/tests/` (engineer, nurse, marketer) and compare against expected outputs.
 2. Check that no gap is invented (every skill traces to posting text).
 3. Update README if inputs, output format, or scoring changed.
-4. Rebuild the zip: `cd resume-skill-gap/.. && zip -r dist/resume-skill-gap.zip resume-skill-gap`
+4. Rebuild the zip: `cd skill && zip -r dist/resume-skill-gap.zip resume-skill-gap`
 5. Add a line to CHANGELOG.md.
 
 ## Style

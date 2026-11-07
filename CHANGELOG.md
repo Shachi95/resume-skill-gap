@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.1.0 — 2026-11-06
+
+- Restructured repo: skill files under `skill/`, new `service/` and `docs/` top-level folders.
+- Updated README to cover the full project, not just the skill.
+
 ## 2.0.0 — 2026-11-06
 
 - Split gaps into **wording gaps** (skills you have but your resume doesn't say) and **true gaps** (skills to learn).

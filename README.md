@@ -1,14 +1,22 @@
 # resume-skill-gap
 
-A Claude skill that compares your resume against job postings and ranks the skills you're missing. Works for any industry — engineering, nursing, marketing, finance, or anything else.
+Compare your resume against job postings and find what's missing. Works for any industry — engineering, nursing, marketing, finance, or anything else.
 
-## What it does
+## What's in this repo
+
+| Folder | What it is |
+|--------|-----------|
+| `skill/` | The Claude skill — a plain-text instruction file you upload to Claude |
+| `service/` | Python backend (planned) |
+| `docs/` | Design notes |
+
+## Skill — What it does
 
 Give it your resume and one or more job postings. It extracts skills from both, separates "wording gaps" (skills you have but your resume doesn't say) from "true gaps" (skills you need to learn), and builds an HTML artifact with ranked tables, suggested resume rewrites, concrete next steps, experience-level checks, and visual strength bars. It also prints a quick text summary in chat so you get the headline immediately.
 
-## Install
+## Skill — Install
 
-1. Download `resume-skill-gap.zip` from the [latest release](../../releases/latest) (or clone this repo).
+1. Download `resume-skill-gap.zip` from the [latest release](../../releases/latest) (or clone this repo and find it at `skill/dist/`).
 2. Unzip it. You'll get a folder called `resume-skill-gap/` containing `SKILL.md`.
 3. In Claude Code, go to **Customize > Skills** and upload the `resume-skill-gap/` folder.
 4. Done. Use it by asking Claude to analyze your resume against job postings.
