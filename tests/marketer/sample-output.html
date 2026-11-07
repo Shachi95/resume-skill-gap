@@ -1,0 +1,208 @@
+<title>Skill Gap Analysis</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg: #f8f8f6; --surface: #ffffff; --fg: #1a1a1a; --fg-muted: #6b6b6b;
+    --border: #e2e0dc; --accent: #2d5be3; --accent-soft: #e8eefb;
+    --req: #c0392b; --req-bg: #fdf0ef; --pref: #c97b1a; --pref-bg: #fdf6eb;
+    --ok: #1a8a4a; --ok-bg: #eef8f2; --warn: #c97b1a; --warn-bg: #fdf6eb;
+    --strength-bg: #e8eefb; --strength-border: #c0d0f0;
+    --wording-bg: #eef5ee; --wording-border: #b3d4b3;
+    --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #111110; --surface: #1c1c1a; --fg: #e5e5e3; --fg-muted: #9a9a96;
+      --border: #2e2e2b; --accent: #6b93f0; --accent-soft: #1c2a4a;
+      --req: #e87468; --req-bg: #2c1815; --pref: #e8b34a; --pref-bg: #2c2414;
+      --ok: #4cc97a; --ok-bg: #142a1c; --warn: #e8b34a; --warn-bg: #2c2414;
+      --strength-bg: #1c2a4a; --strength-border: #2a3d6a;
+      --wording-bg: #142a1c; --wording-border: #1e4a2e;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #111110; --surface: #1c1c1a; --fg: #e5e5e3; --fg-muted: #9a9a96;
+    --border: #2e2e2b; --accent: #6b93f0; --accent-soft: #1c2a4a;
+    --req: #e87468; --req-bg: #2c1815; --pref: #e8b34a; --pref-bg: #2c2414;
+    --ok: #4cc97a; --ok-bg: #142a1c; --warn: #e8b34a; --warn-bg: #2c2414;
+    --strength-bg: #1c2a4a; --strength-border: #2a3d6a;
+    --wording-bg: #142a1c; --wording-border: #1e4a2e;
+    color-scheme: dark;
+  }
+  body { background: var(--bg); color: var(--fg); font-family: var(--font-body); line-height: 1.6; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0; max-width: 880px; margin: 0 auto; }
+  .hdr { padding-block: 2rem 1.25rem; border-bottom: 2px solid var(--border); margin-bottom: 1.5rem; }
+  .hdr h1 { font-size: 1.6rem; font-weight: 700; margin: 0 0 .2rem; letter-spacing: -.025em; }
+  .hdr .meta { font-size: .82rem; color: var(--fg-muted); } .hdr .meta b { color: var(--fg); font-weight: 600; }
+  .caveat { font-size: .78rem; color: var(--warn); margin-top: .3rem; }
+  .chips { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .7rem; }
+  .chip { font-size: .72rem; font-weight: 600; padding: .2rem .6rem; border-radius: 100px; background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
+  .chip .n { font-family: var(--font-mono); margin-right: .2rem; }
+  section { margin-bottom: 2rem; }
+  .sec-tag { font-size: .65rem; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; color: var(--fg-muted); margin-bottom: .2rem; }
+  h2 { font-size: 1.1rem; font-weight: 700; margin: 0 0 .6rem; text-wrap: balance; }
+  .tw { overflow-x: auto; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
+  table { width: 100%; border-collapse: collapse; font-size: .82rem; font-variant-numeric: tabular-nums; }
+  thead th { text-align: left; font-weight: 600; font-size: .7rem; text-transform: uppercase; letter-spacing: .06em; color: var(--fg-muted); padding: .6rem .7rem; border-bottom: 2px solid var(--border); white-space: nowrap; position: sticky; top: 0; background: var(--surface); z-index: 2; }
+  td { padding: .5rem .7rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: var(--accent-soft); }
+  .ev { font-size: .75rem; color: var(--fg-muted); font-style: italic; }
+  .ns { font-size: .75rem; color: var(--accent); }
+  .pill { display: inline-block; font-size: .67rem; font-weight: 600; padding: .12rem .45rem; border-radius: 100px; white-space: nowrap; }
+  .pill-req { background: var(--req-bg); color: var(--req); }
+  .pill-pref { background: var(--pref-bg); color: var(--pref); }
+  .pill-ok { background: var(--ok-bg); color: var(--ok); }
+  .pill-warn { background: var(--warn-bg); color: var(--warn); }
+  .cat { font-size: .7rem; color: var(--fg-muted); font-family: var(--font-mono); }
+  .wbox { background: var(--wording-bg); border: 1px solid var(--wording-border); border-radius: 8px; padding: .9rem; }
+  .wbox .banner { font-size: .78rem; color: var(--ok); font-weight: 600; margin-bottom: .5rem; }
+  .card { border-left: 3px solid var(--accent); background: var(--surface); padding: .65rem .9rem; border-radius: 0 6px 6px 0; margin-bottom: .45rem; }
+  .card .num { font-family: var(--font-mono); font-size: .72rem; font-weight: 500; color: var(--fg-muted); }
+  .card .name { font-weight: 700; font-size: .92rem; }
+  .card .why { font-size: .8rem; color: var(--fg-muted); margin-top: .15rem; }
+  .bar-row { display: flex; align-items: center; gap: .5rem; padding: .35rem .7rem; background: var(--strength-bg); border: 1px solid var(--strength-border); border-radius: 6px; margin-bottom: .3rem; font-size: .82rem; }
+  .bar-row .lbl { font-weight: 600; flex: 1; min-width: 0; }
+  .bar-row .cnt { font-family: var(--font-mono); font-weight: 500; font-size: .78rem; color: var(--accent); white-space: nowrap; }
+  .track { width: 56px; height: 5px; background: var(--border); border-radius: 3px; overflow: hidden; flex-shrink: 0; }
+  .fill { height: 100%; background: var(--accent); border-radius: 3px; }
+  .soft { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: .9rem; }
+  .sr { display: flex; justify-content: space-between; align-items: center; padding: .3rem 0; font-size: .82rem; border-bottom: 1px solid var(--border); }
+  .sr:last-of-type { border-bottom: none; }
+  .status { border-radius: 8px; padding: .7rem .9rem; font-size: .82rem; }
+  .status-ok { background: var(--ok-bg); border: 1px solid var(--ok); }
+  .status-ok b { color: var(--ok); }
+  .foot { border-top: 1px solid var(--border); padding-block: .8rem; font-size: .72rem; color: var(--fg-muted); }
+  @media (max-width: 560px) { .hdr h1 { font-size: 1.3rem; } table { font-size: .76rem; } .bar-row { font-size: .78rem; } .track { width: 36px; } }
+</style>
+
+<div class="hdr">
+  <h1>Skill Gap Analysis</h1>
+  <div class="meta">Resume: <b>Jordan</b> &middot; Marketing Manager &middot; Nov 2026</div>
+  <div class="meta">Analyzed 2 postings (0 could not be opened).</div>
+  <div class="caveat">With only 2 postings, gap rankings may not reflect broader market demand. Add more postings for stronger signal.</div>
+  <div class="chips">
+    <span class="chip"><span class="n">1</span> Sr Marketing Manager</span>
+    <span class="chip"><span class="n">2</span> Growth Marketing Lead</span>
+  </div>
+</div>
+
+<section>
+  <div class="sec-tag">Section 1</div>
+  <h2>Wording Gaps &mdash; Fix Your Resume Today</h2>
+  <div class="wbox">
+    <div class="banner">These rewrites only surface skills your resume already demonstrates.</div>
+    <div class="tw" style="border:none">
+      <table>
+        <thead><tr><th>Posting Keyword</th><th>Your Resume Says</th><th>Suggested Rewrite</th></tr></thead>
+        <tbody>
+          <tr><td><b>B2B marketing</b></td><td class="ev">"Managed social media accounts for 5 B2B clients across LinkedIn and Instagram"</td><td class="ns">Led <b>B2B marketing</b> campaigns for 5 clients across LinkedIn and Instagram</td></tr>
+          <tr><td><b>Conversion rate optimization (CRO)</b></td><td class="ev">"Ran A/B tests on landing pages and ad creatives, improving conversion rate by 22%"</td><td class="ns">Drove <b>conversion rate optimization (CRO)</b> via A/B tests on landing pages and ad creatives, improving conversion by 22%</td></tr>
+          <tr><td><b>Data visualization</b></td><td class="ev">"Reported campaign performance to VP of Marketing using Google Analytics dashboards"</td><td class="ns">Built <b>data visualization dashboards</b> in Google Analytics to report campaign performance to VP of Marketing</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-tag">Section 2</div>
+  <h2>True Gaps &mdash; Skills to Learn</h2>
+  <p style="font-size:.78rem; color:var(--fg-muted); margin:0 0 .6rem">Sorted by weighted score. <span class="pill pill-req">Required</span> = 1.0 &nbsp; <span class="pill pill-pref">Preferred</span> = 0.5 per posting.</p>
+  <div class="tw">
+    <table>
+      <thead><tr><th>#</th><th>Skill</th><th>Category</th><th>Postings</th><th>Level</th><th>Evidence</th><th>Next Step</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td><b>Salesforce CRM</b></td><td><span class="cat">Tools / Software</span></td><td>1 / 2</td><td><span class="pill pill-req">Required</span></td><td class="ev">"Proficiency with Salesforce CRM"</td><td class="ns">Salesforce Trailhead Admin Beginner trail (free)</td></tr>
+        <tr><td>2</td><td><b>Attribution Modeling</b></td><td><span class="cat">Technical Skills</span></td><td>1 / 2</td><td><span class="pill pill-req">Required</span></td><td class="ev">"experience in attribution modeling"</td><td class="ns">Google's Attribution course; set up multi-touch attribution in GA4</td></tr>
+        <tr><td>3</td><td><b>Demand Generation</b></td><td><span class="cat">Technical Skills</span></td><td>1 / 2</td><td><span class="pill pill-req">Required</span></td><td class="ev">"Proven track record with demand generation"</td><td class="ns">Build a demand gen case study from existing email/content campaigns</td></tr>
+        <tr><td>4</td><td><b>Lead Nurturing</b></td><td><span class="cat">Technical Skills</span></td><td>1 / 2</td><td><span class="pill pill-req">Required</span></td><td class="ev">"demand generation and lead nurturing"</td><td class="ns">Create a lead nurturing workflow in HubSpot using existing email program</td></tr>
+        <tr><td>5</td><td><b>SQL</b></td><td><span class="cat">Tools / Software</span></td><td>2 / 2</td><td><span class="pill pill-pref">Preferred</span></td><td class="ev">"SQL or basic data querying skills"</td><td class="ns">Mode Analytics SQL tutorial (free); query Google Analytics data</td></tr>
+        <tr><td>6</td><td><b>Mixpanel / Amplitude</b></td><td><span class="cat">Tools / Software</span></td><td>1 / 2</td><td><span class="pill pill-req">Required</span></td><td class="ev">"analytics tools (Mixpanel, or Amplitude)"</td><td class="ns">Mixpanel free tier &mdash; set up product analytics on a side project</td></tr>
+        <tr><td>7</td><td><b>Klaviyo / Braze</b></td><td><span class="cat">Tools / Software</span></td><td>1 / 2</td><td><span class="pill pill-req">Required</span></td><td class="ev">"marketing automation (HubSpot, Klaviyo, or Braze)"</td><td class="ns">Klaviyo free tier (up to 250 contacts) &mdash; migrate a test email flow</td></tr>
+        <tr><td>8</td><td><b>MBA</b></td><td><span class="cat">Certs / Licenses</span></td><td>1 / 2</td><td><span class="pill pill-pref">Preferred</span></td><td class="ev">"MBA or equivalent advanced degree"</td><td class="ns">Consider part-time MBA or marketing analytics certificate</td></tr>
+        <tr><td>9</td><td><b>ABM</b></td><td><span class="cat">Technical Skills</span></td><td>1 / 2</td><td><span class="pill pill-pref">Preferred</span></td><td class="ev">"account-based marketing (ABM)"</td><td class="ns">Free ABM certification from Demandbase or HubSpot</td></tr>
+        <tr><td>10</td><td><b>6sense / Demandbase</b></td><td><span class="cat">Tools / Software</span></td><td>1 / 2</td><td><span class="pill pill-pref">Preferred</span></td><td class="ev">"tools like 6sense, Demandbase, or Bombora"</td><td class="ns">Demandbase free resources and certification</td></tr>
+        <tr><td>11</td><td><b>Product-Led Growth</b></td><td><span class="cat">Technical Skills</span></td><td>1 / 2</td><td><span class="pill pill-pref">Preferred</span></td><td class="ev">"product-led growth strategies"</td><td class="ns">Reforge PLG course or ProductLed free resources</td></tr>
+        <tr><td>12</td><td><b>Fintech Domain</b></td><td><span class="cat">Domain Knowledge</span></td><td>1 / 2</td><td><span class="pill pill-pref">Preferred</span></td><td class="ev">"Experience in fintech or financial services"</td><td class="ns">Target a fintech open-source or volunteer project</td></tr>
+        <tr><td>13</td><td><b>Python</b></td><td><span class="cat">Tools / Software</span></td><td>1 / 2</td><td><span class="pill pill-pref">Preferred</span></td><td class="ev">"SQL or Python for marketing analytics"</td><td class="ns">Automate a reporting task in Python using Google Analytics API</td></tr>
+        <tr><td>14</td><td><b>Affiliate / Referral</b></td><td><span class="cat">Technical Skills</span></td><td>1 / 2</td><td><span class="pill pill-pref">Preferred</span></td><td class="ev">"affiliate or referral marketing programs"</td><td class="ns">Set up a small referral program using existing tools</td></tr>
+        <tr><td>15</td><td><b>CDP (Segment)</b></td><td><span class="cat">Tools / Software</span></td><td>1 / 2</td><td><span class="pill pill-pref">Preferred</span></td><td class="ev">"CDP platforms (Segment, mParticle)"</td><td class="ns">Segment free tier &mdash; integrate with one data source</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="sec-tag">Section 3</div>
+  <h2>Partial Matches &mdash; Related but Not Exact</h2>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Skill Asked For</th><th>What You Have</th><th>Gap</th><th>Postings</th></tr></thead>
+      <tbody>
+        <tr><td><b>Marketo / Pardot</b></td><td>HubSpot</td><td>Different marketing automation platform</td><td>1 / 2</td></tr>
+        <tr><td><b>$1M+ budget</b></td><td>$500K budget</td><td>Similar scope but below stated threshold</td><td>1 / 2</td></tr>
+        <tr><td><b>Mixpanel / Amplitude</b></td><td>Google Analytics</td><td>Different product analytics tools</td><td>1 / 2</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="sec-tag">Section 4</div>
+  <h2>Experience &amp; Seniority Check</h2>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Role</th><th>Required</th><th>Yours</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td><b>Sr Marketing Manager</b> (Posting 1)</td><td>5+ years B2B marketing</td><td>~8 years</td><td><span class="pill pill-ok">Meets</span></td></tr>
+        <tr><td><b>Growth Marketing Lead</b> (Posting 2)</td><td>4+ years growth/performance</td><td>~8 years</td><td><span class="pill pill-ok">Meets</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="sec-tag">Section 5</div>
+  <h2>Top 5 True Gaps to Focus On</h2>
+  <div class="card"><div class="num">#1</div><div class="name">Salesforce CRM</div><div class="why">Required at Posting 1. No CRM tool on resume &mdash; Salesforce is the industry standard for B2B SaaS.</div></div>
+  <div class="card"><div class="num">#2</div><div class="name">SQL</div><div class="why">Preferred across both postings. High leverage for data-driven marketing; enables self-serve analytics.</div></div>
+  <div class="card"><div class="num">#3</div><div class="name">Demand Generation</div><div class="why">Required at Posting 1. Aligns with existing B2B and email marketing experience.</div></div>
+  <div class="card"><div class="num">#4</div><div class="name">Attribution Modeling</div><div class="why">Required at Posting 1. Builds on existing Google Analytics and campaign reporting experience.</div></div>
+  <div class="card"><div class="num">#5</div><div class="name">ABM Tools (6sense / Demandbase)</div><div class="why">Preferred at Posting 1. Complement existing B2B marketing and ad management skills.</div></div>
+</section>
+
+<section>
+  <div class="sec-tag">Section 6</div>
+  <h2>Your Strongest Skills &mdash; Emphasize These</h2>
+  <div class="bar-row"><div class="lbl">Google Ads</div><div class="cnt">2 / 2</div><div class="track"><div class="fill" style="width:100%"></div></div></div>
+  <div class="bar-row"><div class="lbl">SEO</div><div class="cnt">2 / 2</div><div class="track"><div class="fill" style="width:100%"></div></div></div>
+  <div class="bar-row"><div class="lbl">Content Marketing</div><div class="cnt">2 / 2</div><div class="track"><div class="fill" style="width:100%"></div></div></div>
+  <div class="bar-row"><div class="lbl">A/B Testing</div><div class="cnt">2 / 2</div><div class="track"><div class="fill" style="width:100%"></div></div></div>
+  <div class="bar-row"><div class="lbl">HubSpot</div><div class="cnt">2 / 2</div><div class="track"><div class="fill" style="width:100%"></div></div></div>
+  <div class="bar-row"><div class="lbl">Google Analytics</div><div class="cnt">2 / 2</div><div class="track"><div class="fill" style="width:100%"></div></div></div>
+  <div class="bar-row"><div class="lbl">Email Marketing</div><div class="cnt">1 / 2</div><div class="track"><div class="fill" style="width:50%"></div></div></div>
+  <div class="bar-row"><div class="lbl">Facebook / Meta Ads</div><div class="cnt">1 / 2</div><div class="track"><div class="fill" style="width:50%"></div></div></div>
+  <div class="bar-row"><div class="lbl">B2B Marketing</div><div class="cnt">1 / 2</div><div class="track"><div class="fill" style="width:50%"></div></div></div>
+  <div class="bar-row"><div class="lbl">Budget Management</div><div class="cnt">1 / 2</div><div class="track"><div class="fill" style="width:50%"></div></div></div>
+</section>
+
+<section>
+  <div class="sec-tag">Separate</div>
+  <h2>Soft Skills</h2>
+  <div class="soft">
+    <div class="sr"><span>Team Leadership</span><span class="chip" style="font-size:.68rem">On resume</span></div>
+    <div class="sr"><span>Cross-functional Collaboration</span><span class="chip" style="font-size:.68rem">On resume</span></div>
+    <p style="font-size:.78rem; color:var(--fg-muted); margin:.5rem 0 0">Your resume demonstrates <b>team leadership</b> (managed content writers and designer) and <b>cross-functional collaboration</b> (reported to VP, coordinated partnerships). No soft-skill gaps.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-tag">Section 7</div>
+  <h2>Unopened Links</h2>
+  <div class="status status-ok"><b>All 2 postings read successfully.</b> No links were blocked or expired.</div>
+</section>
+
+<div class="foot">Sample output from <b>resume-skill-gap</b> v2.0 &middot; Fictional data (Jordan Park) &middot; Nov 2026</div>

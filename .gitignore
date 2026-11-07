@@ -1,0 +1,17 @@
+# Build artifacts
+dist/
+
+# macOS
+.DS_Store
+
+# Claude Code session data
+.claude/
+
+# Editor
+*.swp
+*~
+.vscode/
+.idea/
+
+# Personal analysis files (one-off outputs, not part of the skill)
+skill-gap-analysis.html
