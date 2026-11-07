@@ -17,9 +17,8 @@ Give it your resume and one or more job postings. It extracts skills from both, 
 ## Skill — Install
 
 1. Download `resume-skill-gap.zip` from the [latest release](../../releases/latest) (or clone this repo and find it at `skill/dist/`).
-2. Unzip it. You'll get a folder called `resume-skill-gap/` containing `SKILL.md`.
-3. In Claude Code, go to **Customize > Skills** and upload the `resume-skill-gap/` folder.
-4. Done. Use it by asking Claude to analyze your resume against job postings.
+2. In the Claude app, go to **Customize > Skills** and upload the zip file.
+3. Done. Use it by asking Claude to analyze your resume against job postings.
 
 ## Example prompt
 
