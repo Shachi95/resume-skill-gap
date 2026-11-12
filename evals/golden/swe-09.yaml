@@ -1,0 +1,26 @@
+fixture: postings/swe/09-senior-swe-ai-devex.txt
+kind: jd
+reviewed: false
+expected:
+  # Requirements
+  - skill: python
+    requirement_level: required
+  - skill: typescript
+    requirement_level: required
+  - skill: api_design
+    requirement_level: required
+  - skill: llm
+    requirement_level: required
+  - skill: technical_writing
+    requirement_level: required
+  - skill: documentation
+    requirement_level: required
+  # Preferred
+  - skill: open_source
+    requirement_level: preferred
+  - skill: model_evaluation
+    requirement_level: preferred
+  - skill: prompt_engineering
+    requirement_level: preferred
+  - skill: observability
+    requirement_level: preferred

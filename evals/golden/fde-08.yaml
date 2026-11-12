@@ -1,0 +1,16 @@
+fixture: postings/fde/08-senior-fde-strategic-accounts.txt
+kind: jd
+reviewed: false
+expected:
+  - skill: api_design
+    requirement_level: required
+  - skill: ownership
+    requirement_level: required
+  - skill: ambiguity_tolerance
+    requirement_level: required
+  - skill: stakeholder_management
+    requirement_level: required
+  - skill: conversational_ai
+    requirement_level: preferred
+  - skill: nlp
+    requirement_level: preferred

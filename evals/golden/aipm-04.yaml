@@ -1,0 +1,14 @@
+fixture: postings/ai-pm/04-ai-pm-conversational.txt
+kind: jd
+reviewed: false
+expected:
+  - skill: prompt_engineering
+    requirement_level: required
+  - skill: communication
+    requirement_level: required
+  - skill: documentation
+    requirement_level: required
+  - skill: product_judgment
+    requirement_level: required
+  - skill: conversational_ai
+    requirement_level: preferred

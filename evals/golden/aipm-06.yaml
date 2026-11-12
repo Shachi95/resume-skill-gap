@@ -1,0 +1,20 @@
+fixture: postings/ai-pm/06-technical-pm-ai-infra.txt
+kind: jd
+reviewed: false
+expected:
+  - skill: solutions_architecture
+    requirement_level: required
+  - skill: sre
+    requirement_level: required
+  - skill: nvidia_dcgm
+    requirement_level: required
+  - skill: communication
+    requirement_level: required
+  - skill: slurm
+    requirement_level: preferred
+  - skill: kubernetes
+    requirement_level: preferred
+  - skill: observability
+    requirement_level: preferred
+  - skill: open_source
+    requirement_level: preferred

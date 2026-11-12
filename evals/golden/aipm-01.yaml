@@ -1,0 +1,18 @@
+fixture: postings/ai-pm/01-lead-pm-ai-productivity.txt
+kind: jd
+reviewed: false
+expected:
+  - skill: ci_cd
+    requirement_level: unspecified
+  - skill: testing
+    requirement_level: preferred
+  - skill: mentoring
+    requirement_level: unspecified
+  - skill: problem_solving
+    requirement_level: preferred
+  - skill: cross_team_leadership
+    requirement_level: preferred
+  - skill: product_judgment
+    requirement_level: preferred
+  - skill: project_management
+    requirement_level: preferred

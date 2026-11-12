@@ -1,0 +1,22 @@
+fixture: postings/ai-pm/09-staff-pm-ai-inference.txt
+kind: jd
+reviewed: false
+expected:
+  - skill: model_serving
+    requirement_level: required
+  - skill: vllm
+    requirement_level: required
+  - skill: tensorrt_llm
+    requirement_level: required
+  - skill: quantization
+    requirement_level: required
+  - skill: kubernetes
+    requirement_level: required
+  - skill: microservices
+    requirement_level: required
+  - skill: cross_team_leadership
+    requirement_level: required
+  - skill: mentoring
+    requirement_level: required
+  - skill: customer_success
+    requirement_level: unspecified

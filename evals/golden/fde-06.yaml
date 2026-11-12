@@ -1,0 +1,36 @@
+fixture: postings/fde/06-senior-fde-ai-agents.txt
+kind: jd
+reviewed: false
+expected:
+  - skill: python
+    requirement_level: required
+  - skill: pytorch
+    requirement_level: required
+  - skill: tensorflow
+    requirement_level: required
+  - skill: hugging_face
+    requirement_level: required
+  - skill: langchain
+    requirement_level: required
+  - skill: llamaindex
+    requirement_level: required
+  - skill: llm
+    requirement_level: required
+  - skill: agentic_ai
+    requirement_level: required
+  - skill: client_engineering
+    requirement_level: required
+  - skill: technical_consulting
+    requirement_level: required
+  - skill: solutions_architecture
+    requirement_level: required
+  - skill: communication
+    requirement_level: required
+  - skill: ambiguity_tolerance
+    requirement_level: required
+  - skill: vector_database
+    requirement_level: preferred
+  - skill: rag
+    requirement_level: preferred
+  - skill: reinforcement_learning
+    requirement_level: preferred

@@ -1,0 +1,39 @@
+fixture: postings/swe/10-swe-ai-tooling-infrastructure.txt
+kind: jd
+reviewed: false
+expected:
+  # Requirements
+  - skill: python
+    requirement_level: required
+  - skill: c_plus_plus
+    requirement_level: required
+  - skill: pytorch
+    requirement_level: required
+  - skill: tensorflow
+    requirement_level: required
+  - skill: jax
+    requirement_level: required
+  - skill: aws
+    requirement_level: required
+  - skill: gcp
+    requirement_level: required
+  - skill: azure
+    requirement_level: required
+  - skill: linux
+    requirement_level: required
+  - skill: ci_cd
+    requirement_level: required
+  # Preferred
+  - skill: cuda
+    requirement_level: preferred
+  - skill: kubernetes
+    requirement_level: preferred
+  - skill: docker
+    requirement_level: preferred
+  - skill: edge_ai
+    requirement_level: preferred
+  # Responsibilities
+  - skill: security
+    requirement_level: unspecified
+  - skill: compliance
+    requirement_level: unspecified

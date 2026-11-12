@@ -1,0 +1,26 @@
+fixture: postings/fde/01-sr-staff-fde-enterprise-ai.txt
+kind: jd
+reviewed: false
+expected:
+  - skill: cross_team_leadership
+    requirement_level: required
+  - skill: product_judgment
+    requirement_level: required
+  - skill: distributed_systems
+    requirement_level: required
+  - skill: system_design
+    requirement_level: required
+  - skill: llm
+    requirement_level: required
+  - skill: tool_use
+    requirement_level: required
+  - skill: context_engineering
+    requirement_level: required
+  - skill: agentic_ai
+    requirement_level: required
+  - skill: model_evaluation
+    requirement_level: required
+  - skill: communication
+    requirement_level: required
+  - skill: solutions_architecture
+    requirement_level: preferred

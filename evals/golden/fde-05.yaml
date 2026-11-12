@@ -1,0 +1,34 @@
+fixture: postings/fde/05-senior-fde.txt
+kind: jd
+reviewed: false
+expected:
+  - skill: java
+    requirement_level: required
+  - skill: client_engineering
+    requirement_level: required
+  - skill: solutions_architecture
+    requirement_level: required
+  - skill: communication
+    requirement_level: required
+  - skill: stakeholder_management
+    requirement_level: required
+  - skill: travel_willingness
+    requirement_level: required
+  - skill: spring_boot
+    requirement_level: preferred
+  - skill: rest_api
+    requirement_level: preferred
+  - skill: mentoring
+    requirement_level: preferred
+  - skill: gcp
+    requirement_level: preferred
+  - skill: ci_cd
+    requirement_level: preferred
+  - skill: docker
+    requirement_level: preferred
+  - skill: infrastructure_as_code
+    requirement_level: preferred
+  - skill: documentation
+    requirement_level: unspecified
+  - skill: technical_writing
+    requirement_level: unspecified

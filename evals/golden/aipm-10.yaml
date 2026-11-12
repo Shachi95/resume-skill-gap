@@ -1,0 +1,14 @@
+fixture: postings/ai-pm/10-staff-pm-ai-applications.txt
+kind: jd
+reviewed: false
+expected:
+  - skill: communication
+    requirement_level: required
+  - skill: stakeholder_management
+    requirement_level: required
+  - skill: ambiguity_tolerance
+    requirement_level: required
+  - skill: product_judgment
+    requirement_level: required
+  - skill: conversational_ai
+    requirement_level: preferred

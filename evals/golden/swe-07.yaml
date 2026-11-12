@@ -1,0 +1,44 @@
+fixture: postings/swe/07-staff-swe-ai-gateway.txt
+kind: jd
+reviewed: false
+expected:
+  # Requirements
+  - skill: distributed_systems
+    requirement_level: required
+  - skill: api_gateway
+    requirement_level: required
+  - skill: load_balancing
+    requirement_level: required
+  - skill: service_mesh
+    requirement_level: required
+  - skill: envoy
+    requirement_level: required
+  - skill: nginx
+    requirement_level: required
+  - skill: kong
+    requirement_level: required
+  - skill: istio
+    requirement_level: required
+  - skill: go
+    requirement_level: required
+  - skill: c_plus_plus
+    requirement_level: required
+  - skill: rust
+    requirement_level: required
+  - skill: kubernetes
+    requirement_level: required
+  - skill: observability
+    requirement_level: required
+  - skill: grpc
+    requirement_level: required
+  # Preferred
+  - skill: vllm
+    requirement_level: preferred
+  - skill: tensorrt_llm
+    requirement_level: preferred
+  - skill: triton_inference_server
+    requirement_level: preferred
+  - skill: model_serving
+    requirement_level: preferred
+  - skill: open_source
+    requirement_level: preferred

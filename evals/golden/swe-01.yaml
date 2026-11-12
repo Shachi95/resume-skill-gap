@@ -1,0 +1,49 @@
+fixture: postings/swe/01-senior-lead-swe-ai-training-infra.txt
+kind: jd
+reviewed: false
+expected:
+  # Requirements
+  - skill: python
+    requirement_level: required
+  - skill: go
+    requirement_level: required
+  - skill: java
+    requirement_level: required
+  - skill: c_sharp
+    requirement_level: required
+  - skill: kubernetes
+    requirement_level: required
+  - skill: docker
+    requirement_level: required
+  - skill: microservices
+    requirement_level: required
+  - skill: responsible_ai
+    requirement_level: required
+  - skill: observability
+    requirement_level: required
+  # Preferred
+  - skill: performance_optimization
+    requirement_level: preferred
+  - skill: nvidia_dcgm
+    requirement_level: preferred
+  - skill: cuda
+    requirement_level: preferred
+  - skill: mlflow
+    requirement_level: preferred
+  - skill: distributed_training
+    requirement_level: preferred
+  - skill: ray
+    requirement_level: preferred
+  - skill: slurm
+    requirement_level: preferred
+  - skill: linux
+    requirement_level: preferred
+  # Responsibilities
+  - skill: ci_cd
+    requirement_level: unspecified
+  - skill: infrastructure_as_code
+    requirement_level: unspecified
+  - skill: mentoring
+    requirement_level: unspecified
+  - skill: cross_team_leadership
+    requirement_level: unspecified

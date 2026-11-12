@@ -1,0 +1,57 @@
+fixture: postings/swe/04-senior-swe-ai-agentic-platform.txt
+kind: jd
+reviewed: false
+expected:
+  # Requirements
+  - skill: distributed_systems
+    requirement_level: required
+  - skill: agentic_ai
+    requirement_level: required
+  - skill: llm
+    requirement_level: required
+  - skill: python
+    requirement_level: required
+  - skill: java
+    requirement_level: required
+  - skill: typescript
+    requirement_level: required
+  - skill: api_design
+    requirement_level: required
+  - skill: langgraph
+    requirement_level: required
+  - skill: anthropic_mcp
+    requirement_level: required
+  - skill: autogen
+    requirement_level: required
+  - skill: llamaindex
+    requirement_level: required
+  - skill: microservices
+    requirement_level: required
+  - skill: kubernetes
+    requirement_level: required
+  - skill: aws
+    requirement_level: required
+  - skill: observability
+    requirement_level: required
+  - skill: vector_database
+    requirement_level: required
+  - skill: kafka
+    requirement_level: required
+  - skill: sqs
+    requirement_level: required
+  # Preferred
+  - skill: fine_tuning
+    requirement_level: preferred
+  - skill: rlhf
+    requirement_level: preferred
+  - skill: compliance
+    requirement_level: preferred
+  - skill: open_source
+    requirement_level: preferred
+  # Responsibilities
+  - skill: model_serving
+    requirement_level: unspecified
+  - skill: model_evaluation
+    requirement_level: unspecified
+  - skill: ci_cd
+    requirement_level: unspecified
