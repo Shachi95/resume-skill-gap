@@ -1,6 +1,6 @@
 fixture: postings/ai-pm/06-technical-pm-ai-infra.txt
 kind: jd
-reviewed: false
+reviewed: true
 expected:
   - skill: solutions_architecture
     requirement_level: required

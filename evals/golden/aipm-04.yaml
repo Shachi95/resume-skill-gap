@@ -1,6 +1,6 @@
 fixture: postings/ai-pm/04-ai-pm-conversational.txt
 kind: jd
-reviewed: false
+reviewed: true
 expected:
   - skill: prompt_engineering
     requirement_level: required

@@ -1,6 +1,6 @@
 fixture: postings/ai-pm/09-staff-pm-ai-inference.txt
 kind: jd
-reviewed: false
+reviewed: true
 expected:
   - skill: model_serving
     requirement_level: required

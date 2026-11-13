@@ -1,6 +1,6 @@
 fixture: postings/fde/06-senior-fde-ai-agents.txt
 kind: jd
-reviewed: false
+reviewed: true
 expected:
   - skill: python
     requirement_level: required

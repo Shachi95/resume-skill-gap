@@ -1,6 +1,6 @@
 fixture: postings/fde/05-senior-fde.txt
 kind: jd
-reviewed: false
+reviewed: true
 expected:
   - skill: java
     requirement_level: required

@@ -1,6 +1,6 @@
 fixture: postings/fde/01-sr-staff-fde-enterprise-ai.txt
 kind: jd
-reviewed: false
+reviewed: true
 expected:
   - skill: cross_team_leadership
     requirement_level: required

@@ -1,6 +1,6 @@
 fixture: postings/swe/01-senior-lead-swe-ai-training-infra.txt
 kind: jd
-reviewed: false
+reviewed: true
 expected:
   # Requirements
   - skill: python

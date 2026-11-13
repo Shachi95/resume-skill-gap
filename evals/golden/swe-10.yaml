@@ -1,6 +1,6 @@
 fixture: postings/swe/10-swe-ai-tooling-infrastructure.txt
 kind: jd
-reviewed: false
+reviewed: true
 expected:
   # Requirements
   - skill: python

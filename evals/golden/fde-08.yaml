@@ -1,6 +1,6 @@
 fixture: postings/fde/08-senior-fde-strategic-accounts.txt
 kind: jd
-reviewed: false
+reviewed: true
 expected:
   - skill: api_design
     requirement_level: required
