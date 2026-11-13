@@ -1,0 +1,16 @@
+Role: Forward Deployed Engineer, Strategic Deployments
+Location: Hybrid, Atlanta, GA
+Level: Senior
+
+Requirements:
+- 5+ years building apps from scratch in TypeScript/Node.js/React with full-stack depth
+- Leading hands-on production projects end to end, preferably client-facing
+- Background in solution architecture or software engineering
+- Strong AI/LLM understanding (agent architectures, MCP or comparable tool-use protocols, evals, prompt-to-production)
+- Navigating C-suite relationships
+- Turning one-off delivery into reusable assets or playbooks
+- Entrepreneurial focus
+
+Responsibilities:
+- AI agents, vibe apps, MCP integrations, custom scripts
+- Evals, PRDs, workflow evaluations

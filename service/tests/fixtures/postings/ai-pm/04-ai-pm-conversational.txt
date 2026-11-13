@@ -1,0 +1,25 @@
+Role: AI Product Manager, Superhumans & Console
+Location: Remote, US
+Level: Senior
+
+Requirements:
+- 5+ years product management (2+ on AI-native product where UX was the product)
+- Owned a surface users loved (founder or early-startup experience ideal)
+- Built or owned a builder, editor, or configuration product
+- Funnel thinking (signup to activation to habit) with time-to-value and retention results
+- Technical enough for prompt, context, and config changes; reads conversation traces
+- Prototypes with code or design tools before writing docs
+- Clear writing
+
+Preferred:
+- Voice, video, or real-time conversational products
+- Product-led growth and self-serve funnels with pricing or packaging
+- GTM depth (quota or CS book experience)
+- Analytics or dashboard products
+- Enterprise admin (roles, permissions, workspace management)
+
+Responsibilities:
+- Latency and interruption handling, in-call assists, interactive demos
+- Console features (persona, goals, ICP, knowledge, guardrails, preview, publish)
+- Self-serve onboarding and analytics
+- Personalization and shared context graph

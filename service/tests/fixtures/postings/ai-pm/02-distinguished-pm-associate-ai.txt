@@ -1,0 +1,23 @@
+Role: Distinguished Product Manager — Associate AI
+Location: Hybrid, Bellevue, WA
+Level: Expert/Leader
+
+Requirements:
+- Bachelor's in CS, Engineering, or related + 11 years PM experience (OR 13 years PM without degree)
+- Deep product leadership in AI/ML, agentic systems, search, personalization, data, or developer ecosystems
+- Technical fluency in agent orchestration, retrieval, evaluation, context, and model-driven experiences
+- Driving platform adoption across teams
+- Judgment on customer experience, reuse, quality, governance, risk, and business value
+- Influencing executives without direct authority
+- Mentoring senior product leaders
+
+Preferred:
+- Master's in CS/Engineering/Business + 10 years PM on consumer-facing B2B/B2C products
+- Supervisory experience
+- WCAG 2.2 AA, assistive technologies, and digital accessibility
+
+Responsibilities:
+- Orchestration, context and memory, personalization, search and retrieval
+- Build/buy/partner decisions
+- Quality, trust, and adoption metrics
+- Associate AI platform strategy

@@ -1,0 +1,22 @@
+Role: Senior Forward Deployed Engineer, AI Agents
+Location: In-Office (2 locations)
+Level: Mid/Senior
+
+Requirements:
+- 5+ years professional software engineering or hands-on coding
+- Python and ML/AI frameworks (PyTorch, TensorFlow, Hugging Face, LangChain, LlamaIndex)
+- Bachelor's in CS or related field required
+- Hands-on LLMs, AI agents, or orchestration frameworks
+- Customer-facing technical consulting or solution engineering
+- Excellent communication
+- Comfort in ambiguous, fast-paced environments
+
+Preferred:
+- Building production ML/AI systems
+- Vector databases, RAG, or reinforcement learning
+- Prior forward-deployed, field engineering, or solutions architect roles
+
+Responsibilities:
+- Reference implementations and technical workshops
+- Feedback to the product roadmap
+- W&B Weave integration

@@ -1,0 +1,21 @@
+Role: Principal AI Forward Deployed Engineer
+Location: Hybrid, Santa Clara, CA
+Level: Expert/Leader
+
+Requirements:
+- Bachelor's in CS/SWE or related (or equivalent)
+- 15 years with Bachelor's, 12 with Master's, 8 with PhD (or equivalent)
+- Demonstrated production AI delivery in customer-facing settings
+- Hands-on autonomous agent systems (planning, tool invocation, memory, context, guardrails)
+- Working knowledge of LLM behavior, evaluation, and failure modes
+- Expert-level solution architecture and integration
+- AI system security and reliability (least privilege, monitoring, rollback)
+- Leading and coaching engineers
+
+Preferred:
+- Knowledge of CRM/Industry domains (sales automation, CPQ, customer service, field service)
+
+Responsibilities:
+- Reference architectures and deployment patterns
+- Prompt injection and data-leakage defense
+- Mentoring engineers

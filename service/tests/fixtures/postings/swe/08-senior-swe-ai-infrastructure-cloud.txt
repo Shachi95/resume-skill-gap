@@ -1,0 +1,24 @@
+Role: Senior Software Engineer, AI Infrastructure
+Location: Hybrid, Bellevue, WA
+Level: Senior
+
+Requirements:
+- 5+ years of industry software engineering experience
+- Strong Python or Go
+- Experience building and operating distributed systems at scale
+- Familiarity with cloud infrastructure (AWS, GCP, or Azure)
+- Understanding of ML/AI concepts and infrastructure requirements
+
+Preferred:
+- ML training or inference infrastructure experience
+- GPU cluster management and optimization
+- Kubernetes, Docker, container orchestration at scale
+- Data pipeline and workflow orchestration (Airflow, Argo, Prefect)
+- Terraform or similar IaC tools
+- Apache Spark, Ray, or distributed computing frameworks
+
+Responsibilities:
+- Design and build scalable AI/ML infrastructure
+- Optimize compute resource utilization for training and inference
+- Build tooling for ML engineers to improve productivity
+- Operate production ML systems with high reliability

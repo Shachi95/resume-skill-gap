@@ -1,0 +1,21 @@
+Role: Forward Deployed Engineer
+Location: Hybrid, New York, NY
+Level: Junior
+
+Requirements:
+- 1+ year post-college work experience
+- Strong engineering background (CS, Math, SWE, Physics, or Data Science preferred)
+- Strong coding in Python, TypeScript, JavaScript, React, or similar
+- Ability to travel up to 30%
+- Building and deploying products end to end
+- Testing and validating edge AI flows on site
+
+Preferred:
+- Computer vision/edge systems
+- Manufacturing/logistics/industrial background
+- Founder/early-builder experience
+
+Responsibilities:
+- Edge AI detection/tracking/alerting workflows
+- Reusable modules and playbooks
+- Backend/frontend/research collaboration

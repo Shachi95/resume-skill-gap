@@ -1,0 +1,58 @@
+{
+  "skills": [
+    {
+      "name": "Java",
+      "category": "language",
+      "level": "unspecified",
+      "evidence": "Languages: Java, Python, JavaScript, TypeScript, SQL"
+    },
+    {
+      "name": "Python",
+      "category": "language",
+      "level": "unspecified",
+      "evidence": "Languages: Java, Python, JavaScript, TypeScript, SQL"
+    },
+    {
+      "name": "JavaScript",
+      "category": "language",
+      "level": "unspecified",
+      "evidence": "Languages: Java, Python, JavaScript, TypeScript, SQL"
+    },
+    {
+      "name": "TypeScript",
+      "category": "language",
+      "level": "unspecified",
+      "evidence": "Languages: Java, Python, JavaScript, TypeScript, SQL"
+    },
+    {
+      "name": "SQL",
+      "category": "language",
+      "level": "unspecified",
+      "evidence": "Languages: Java, Python, JavaScript, TypeScript, SQL"
+    },
+    {
+      "name": "AWS",
+      "category": "cloud_infra",
+      "level": "unspecified",
+      "evidence": "Cloud: AWS (S3, Lambda, ECS), Docker, Kubernetes"
+    },
+    {
+      "name": "Docker",
+      "category": "cloud_infra",
+      "level": "unspecified",
+      "evidence": "Cloud: AWS (S3, Lambda, ECS), Docker, Kubernetes"
+    },
+    {
+      "name": "Kubernetes",
+      "category": "cloud_infra",
+      "level": "unspecified",
+      "evidence": "Cloud: AWS (S3, Lambda, ECS), Docker, Kubernetes"
+    },
+    {
+      "name": "REST APIs",
+      "category": "practice",
+      "level": "unspecified",
+      "evidence": "Built distributed systems and REST APIs."
+    }
+  ]
+}

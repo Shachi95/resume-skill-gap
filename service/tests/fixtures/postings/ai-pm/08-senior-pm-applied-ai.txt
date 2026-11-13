@@ -1,0 +1,27 @@
+Role: Senior Product Manager, Applied AI
+Location: In-Office, Seattle, WA
+Level: Senior
+
+Requirements:
+- 6+ years product management or technical product leadership (2+ shipping AI)
+- Track record of internal process transformation, operational optimization, or internal tools
+- Practical understanding of LLMs, prompt systems, agentic patterns (tool calling, multi-step reasoning), RAG
+- Hands-on fluency with AI tools (prompt engineering, AI coding agents, rapid prototyping)
+- SQL, Snowflake, AWS
+- Strong communication and stakeholder management
+- Change management and user empathy
+- Entrepreneurial drive and bias toward shipping fast
+
+Preferred:
+- Managing third-party vendor selection for enterprise AI
+- Scaling internal productivity tools or AI agents at high-growth companies
+- CS, data science, or related technical background
+- Enterprise security, compliance, governance for AI
+- Hyper-growth startup experience
+
+Responsibilities:
+- Internal AI roadmap
+- PRDs and success metrics
+- RAG and agentic workflow builds
+- Change management and agile delivery
+- Production reliability monitoring

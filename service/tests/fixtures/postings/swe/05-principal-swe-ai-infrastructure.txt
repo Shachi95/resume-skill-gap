@@ -1,0 +1,22 @@
+Role: Principal Software Engineer, AI Infrastructure
+Location: In-Office, Redmond, WA
+Level: Senior (IC5)
+
+Requirements:
+- Bachelor's in CS or related AND 6+ years distributed-systems coding in C#, Java, or Go (or equivalent)
+- Ability to pass security screening including cloud background check
+
+Preferred:
+- Master's + 8+ years, or Bachelor's + 12+ years
+- 5+ years on Azure, AWS, or GCP
+- 3+ years traffic routing/scheduling or compute-allocation optimization
+- Python, Docker, Kubernetes
+- AI/ML infrastructure (model serving, GPU fleets)
+- Leading projects across 3+ partner teams
+- On-call for highly available services
+
+Responsibilities:
+- Design globally distributed AI infrastructure for traffic routing and GPU allocation
+- Capacity optimization, reliability engineering, incident response
+- Feature flags and gradual rollouts
+- AI-native SDLC tooling, responsible AI

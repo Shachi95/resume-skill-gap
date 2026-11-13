@@ -1,0 +1,597 @@
+# ── Languages ──────────────────────────────────────────────────────────────────
+python:
+  category: language
+  aliases: [py, python3, cpython]
+java:
+  category: language
+  aliases: [jdk, jvm]
+javascript:
+  category: language
+  aliases: [js, ecmascript, es6]
+typescript:
+  category: language
+  aliases: [ts]
+go:
+  category: language
+  aliases: [golang]
+  ambiguous: true
+c_plus_plus:
+  category: language
+  aliases: [c++, cpp, cxx]
+rust:
+  category: language
+  aliases: [rustlang]
+  ambiguous: true
+c_sharp:
+  category: language
+  aliases: [c#, csharp, dotnet, .net]
+sql:
+  category: language
+  aliases: [structured query language]
+ruby:
+  category: language
+  aliases: [rb]
+kotlin:
+  category: language
+  aliases: [kt]
+scala:
+  category: language
+  aliases: []
+r:
+  category: language
+  aliases: [rlang]
+  ambiguous: true
+bash:
+  category: language
+  aliases: [shell, sh, zsh, shell scripting]
+swift:
+  category: language
+  aliases: []
+  ambiguous: true
+lua:
+  category: language
+  aliases: []
+html_css:
+  category: language
+  aliases: [html, css, html5, css3]
+php:
+  category: language
+  aliases: []
+
+# ── Frameworks & Libraries ────────────────────────────────────────────────────
+react:
+  category: framework
+  aliases: [reactjs, react.js]
+node_js:
+  category: framework
+  aliases: [node, nodejs, node.js]
+django:
+  category: framework
+  aliases: []
+flask:
+  category: framework
+  aliases: []
+fastapi:
+  category: framework
+  aliases: [fast api]
+spring_boot:
+  category: framework
+  aliases: [spring, spring framework, springboot]
+express:
+  category: framework
+  aliases: [expressjs, express.js]
+next_js:
+  category: framework
+  aliases: [nextjs, next.js, next]
+vue:
+  category: framework
+  aliases: [vuejs, vue.js]
+angular:
+  category: framework
+  aliases: [angularjs]
+langchain:
+  category: framework
+  aliases: []
+langgraph:
+  category: framework
+  aliases: [lang graph]
+autogen:
+  category: framework
+  aliases: [auto gen]
+crew_ai:
+  category: framework
+  aliases: [crewai]
+llamaindex:
+  category: framework
+  aliases: [llama index, llama_index]
+anthropic_mcp:
+  category: framework
+  aliases: [mcp, model context protocol]
+pydantic:
+  category: framework
+  aliases: []
+graphql:
+  category: framework
+  aliases: [graph ql]
+grpc:
+  category: framework
+  aliases: [g-rpc, grpc-web]
+rest_api:
+  category: framework
+  aliases: [rest, restful, restful api, rest apis]
+protobuf:
+  category: framework
+  aliases: [protocol buffers, proto]
+openapi:
+  category: framework
+  aliases: [swagger, openapi spec]
+jquery:
+  category: framework
+  aliases: []
+tailwind:
+  category: framework
+  aliases: [tailwindcss, tailwind css]
+sqlalchemy:
+  category: framework
+  aliases: [sql alchemy]
+
+# ── Cloud & Infrastructure ────────────────────────────────────────────────────
+aws:
+  category: cloud_infra
+  aliases: [amazon web services, amazon cloud]
+azure:
+  category: cloud_infra
+  aliases: [microsoft azure, azure cloud]
+gcp:
+  category: cloud_infra
+  aliases: [google cloud, google cloud platform]
+kubernetes:
+  category: cloud_infra
+  aliases: [k8s, kube]
+docker:
+  category: cloud_infra
+  aliases: [containers, containerization]
+terraform:
+  category: cloud_infra
+  aliases: [tf, hcl]
+cloudformation:
+  category: cloud_infra
+  aliases: [cfn, aws cloudformation]
+  parent: aws
+aws_cdk:
+  category: cloud_infra
+  aliases: [cdk, cloud development kit]
+  parent: aws
+pulumi:
+  category: cloud_infra
+  aliases: []
+ansible:
+  category: cloud_infra
+  aliases: []
+helm:
+  category: cloud_infra
+  aliases: [helm charts]
+prometheus:
+  category: cloud_infra
+  aliases: [prom]
+grafana:
+  category: cloud_infra
+  aliases: []
+datadog:
+  category: cloud_infra
+  aliases: [dd]
+cloudwatch:
+  category: cloud_infra
+  aliases: [aws cloudwatch]
+  parent: aws
+kibana:
+  category: cloud_infra
+  aliases: [elk stack]
+nginx:
+  category: cloud_infra
+  aliases: []
+envoy:
+  category: cloud_infra
+  aliases: [envoy proxy]
+istio:
+  category: cloud_infra
+  aliases: []
+kong:
+  category: cloud_infra
+  aliases: [kong gateway]
+linux:
+  category: cloud_infra
+  aliases: [linux systems, linux internals, cgroups, namespaces]
+github_actions:
+  category: cloud_infra
+  aliases: [gha, github ci]
+jenkins:
+  category: cloud_infra
+  aliases: []
+gitlab_ci:
+  category: cloud_infra
+  aliases: [gitlab ci/cd, gitlab pipelines]
+circleci:
+  category: cloud_infra
+  aliases: [circle ci]
+argo_cd:
+  category: cloud_infra
+  aliases: [argocd, argo]
+vault:
+  category: cloud_infra
+  aliases: [hashicorp vault]
+lambda:
+  category: cloud_infra
+  aliases: [aws lambda]
+  parent: aws
+ec2:
+  category: cloud_infra
+  aliases: [aws ec2]
+  parent: aws
+s3:
+  category: cloud_infra
+  aliases: [aws s3]
+  parent: aws
+sqs:
+  category: cloud_infra
+  aliases: [aws sqs, amazon sqs]
+  parent: aws
+sns:
+  category: cloud_infra
+  aliases: [aws sns, amazon sns]
+  parent: aws
+kinesis:
+  category: cloud_infra
+  aliases: [aws kinesis, amazon kinesis]
+  parent: aws
+step_functions:
+  category: cloud_infra
+  aliases: [aws step functions]
+  parent: aws
+vpc:
+  category: cloud_infra
+  aliases: [virtual private cloud, aws vpc]
+  parent: aws
+load_balancing:
+  category: cloud_infra
+  aliases: [load balancer, elb, alb, nlb]
+service_mesh:
+  category: cloud_infra
+  aliases: [service meshes]
+api_gateway:
+  category: cloud_infra
+  aliases: [api gateways, reverse proxy]
+vertex_ai:
+  category: cloud_infra
+  aliases: [google vertex ai, vertex]
+  parent: gcp
+sagemaker:
+  category: cloud_infra
+  aliases: [aws sagemaker, amazon sagemaker]
+  parent: aws
+
+# ── Data ──────────────────────────────────────────────────────────────────────
+postgresql:
+  category: data
+  aliases: [postgres, psql, pg]
+mysql:
+  category: data
+  aliases: [mariadb]
+mongodb:
+  category: data
+  aliases: [mongo]
+redis:
+  category: data
+  aliases: []
+dynamodb:
+  category: data
+  aliases: [dynamo, aws dynamodb, amazon dynamodb]
+cassandra:
+  category: data
+  aliases: [apache cassandra]
+kafka:
+  category: data
+  aliases: [apache kafka, kafka streams]
+rabbitmq:
+  category: data
+  aliases: [rabbit mq, amqp]
+airflow:
+  category: data
+  aliases: [apache airflow]
+prefect:
+  category: data
+  aliases: []
+spark:
+  category: data
+  aliases: [apache spark, pyspark]
+  ambiguous: true
+flink:
+  category: data
+  aliases: [apache flink]
+dbt:
+  category: data
+  aliases: [data build tool]
+snowflake:
+  category: data
+  aliases: []
+redshift:
+  category: data
+  aliases: [aws redshift, amazon redshift]
+  parent: aws
+bigquery:
+  category: data
+  aliases: [bq, google bigquery]
+  parent: gcp
+elasticsearch:
+  category: data
+  aliases: [elastic, es, opensearch]
+parquet:
+  category: data
+  aliases: [apache parquet]
+apache_iceberg:
+  category: data
+  aliases: [iceberg]
+delta_lake:
+  category: data
+  aliases: [delta, databricks delta lake]
+
+# ── AI & ML ───────────────────────────────────────────────────────────────────
+pytorch:
+  category: ai_ml
+  aliases: [torch]
+tensorflow:
+  category: ai_ml
+  aliases: [tf-ml, keras]
+jax:
+  category: ai_ml
+  aliases: []
+scikit_learn:
+  category: ai_ml
+  aliases: [sklearn, scikit learn]
+numpy:
+  category: ai_ml
+  aliases: [np]
+pandas:
+  category: ai_ml
+  aliases: [pd]
+mlflow:
+  category: ai_ml
+  aliases: [ml flow]
+kubeflow:
+  category: ai_ml
+  aliases: [kube flow]
+ray:
+  category: ai_ml
+  aliases: [ray.io, ray cluster]
+vllm:
+  category: ai_ml
+  aliases: [v-llm]
+tensorrt_llm:
+  category: ai_ml
+  aliases: [tensorrt, trt-llm]
+triton_inference_server:
+  category: ai_ml
+  aliases: [triton, nvidia triton]
+cuda:
+  category: ai_ml
+  aliases: [nvidia cuda, gpu programming]
+nvidia_dcgm:
+  category: ai_ml
+  aliases: [dcgm, nvidia data center gpu manager]
+llm:
+  category: ai_ml
+  aliases: [large language model, large language models, llms]
+rag:
+  category: ai_ml
+  aliases: [retrieval augmented generation, retrieval-augmented generation]
+vector_database:
+  category: ai_ml
+  aliases: [vector db, vector store, vector databases]
+pgvector:
+  category: ai_ml
+  aliases: [pg_vector]
+  parent: postgresql
+chromadb:
+  category: ai_ml
+  aliases: [chroma, chroma db]
+pinecone:
+  category: ai_ml
+  aliases: []
+embeddings:
+  category: ai_ml
+  aliases: [text embeddings, embedding models, vector embeddings]
+fine_tuning:
+  category: ai_ml
+  aliases: [finetuning, fine tuning, model fine-tuning]
+prompt_engineering:
+  category: ai_ml
+  aliases: [prompt design, prompting]
+model_evaluation:
+  category: ai_ml
+  aliases: [ml evaluation, model eval, evals, ai evaluation]
+computer_vision:
+  category: ai_ml
+  aliases: [cv, image recognition]
+nlp:
+  category: ai_ml
+  aliases: [natural language processing, text processing]
+deepspeed:
+  category: ai_ml
+  aliases: [deep speed]
+slurm:
+  category: ai_ml
+  aliases: [slurm scheduler]
+onnx:
+  category: ai_ml
+  aliases: [open neural network exchange]
+hugging_face:
+  category: ai_ml
+  aliases: [hf, huggingface, transformers library]
+rlhf:
+  category: ai_ml
+  aliases: [rlaif, reinforcement learning from human feedback]
+reinforcement_learning:
+  category: ai_ml
+  aliases: [rl]
+distributed_training:
+  category: ai_ml
+  aliases: [multi-gpu training, multi-node training]
+model_serving:
+  category: ai_ml
+  aliases: [inference serving, llm serving, model inference]
+agentic_ai:
+  category: ai_ml
+  aliases: [ai agents, agent systems, agent frameworks, agentic systems]
+context_engineering:
+  category: ai_ml
+  aliases: []
+tool_use:
+  category: ai_ml
+  aliases: [tool calling, function calling]
+responsible_ai:
+  category: ai_ml
+  aliases: [ai safety, ai ethics, ai guardrails]
+edge_ai:
+  category: ai_ml
+  aliases: [edge computing ai, edge ml]
+conversational_ai:
+  category: ai_ml
+  aliases: [chatbot, voice ai, speech to text, dialog systems]
+quantization:
+  category: ai_ml
+  aliases: [model quantization]
+
+# ── Practices ─────────────────────────────────────────────────────────────────
+distributed_systems:
+  category: practice
+  aliases: [distributed computing, distributed architecture]
+microservices:
+  category: practice
+  aliases: [microservice architecture, microservice, micro services]
+event_driven_architecture:
+  category: practice
+  aliases: [event driven, event-driven, eda, event sourcing]
+ci_cd:
+  category: practice
+  aliases: [ci/cd, cicd, continuous integration, continuous deployment, continuous delivery]
+infrastructure_as_code:
+  category: practice
+  aliases: [iac, infra as code]
+observability:
+  category: practice
+  aliases: [distributed tracing, structured logging, o11y]
+monitoring:
+  category: practice
+  aliases: [alerting, metrics collection]
+api_design:
+  category: practice
+  aliases: [api architecture, sdk design]
+system_design:
+  category: practice
+  aliases: [architecture design, systems architecture]
+testing:
+  category: practice
+  aliases: [unit testing, integration testing, test automation]
+tdd:
+  category: practice
+  aliases: [test driven development, test-driven development]
+agile:
+  category: practice
+  aliases: [agile methodology, agile development]
+scrum:
+  category: practice
+  aliases: [sprint planning]
+code_review:
+  category: practice
+  aliases: [code reviews, peer review]
+technical_writing:
+  category: practice
+  aliases: [tech writing, documentation writing, developer docs]
+documentation:
+  category: practice
+  aliases: [docs, runbooks, adrs]
+security:
+  category: practice
+  aliases: [application security, appsec, infosec]
+compliance:
+  category: practice
+  aliases: [regulatory compliance, gdpr, ccpa, sox, hipaa]
+performance_optimization:
+  category: practice
+  aliases: [performance tuning, profiling, benchmarking]
+incident_management:
+  category: practice
+  aliases: [incident response, on-call, oncall, rca, root cause analysis]
+sre:
+  category: practice
+  aliases: [site reliability engineering, slos, slas]
+devops:
+  category: practice
+  aliases: [dev ops]
+open_source:
+  category: practice
+  aliases: [oss, open source contributions, open-source]
+full_stack:
+  category: practice
+  aliases: [full-stack, fullstack, full stack development]
+
+# ── Customer-Facing ───────────────────────────────────────────────────────────
+client_engineering:
+  category: customer_facing
+  aliases: [customer engineering, customer-facing engineering, field engineering]
+solutions_architecture:
+  category: customer_facing
+  aliases: [solution architecture, solutions architect, solution design]
+technical_consulting:
+  category: customer_facing
+  aliases: [tech consulting, implementation consulting]
+stakeholder_management:
+  category: customer_facing
+  aliases: [executive communication, c-suite, vp-level discussions]
+demo_delivery:
+  category: customer_facing
+  aliases: [product demos, technical demos, poc delivery]
+customer_success:
+  category: customer_facing
+  aliases: [customer engagement, customer adoption]
+pre_sales:
+  category: customer_facing
+  aliases: [pre-sales engineering, sales engineering support]
+travel_willingness:
+  category: customer_facing
+  aliases: [travel required, travel up to]
+enterprise_integration:
+  category: customer_facing
+  aliases: [partner integration, system integration, enterprise saas]
+
+# ── Soft Skills ───────────────────────────────────────────────────────────────
+cross_team_leadership:
+  category: soft_skill
+  aliases: [cross-functional leadership, cross-org leadership, technical leadership]
+mentoring:
+  category: soft_skill
+  aliases: [coaching, mentorship]
+communication:
+  category: soft_skill
+  aliases: [written communication, verbal communication, storytelling]
+problem_solving:
+  category: soft_skill
+  aliases: [analytical thinking, critical thinking]
+ownership:
+  category: soft_skill
+  aliases: [bias for action, accountability, entrepreneurial mindset]
+collaboration:
+  category: soft_skill
+  aliases: [teamwork, cross-functional collaboration]
+project_management:
+  category: soft_skill
+  aliases: [program management, delivery management]
+presentation:
+  category: soft_skill
+  aliases: [public speaking, conference talks, technical presentations]
+product_judgment:
+  category: soft_skill
+  aliases: [product instincts, product sense, product thinking]
+ambiguity_tolerance:
+  category: soft_skill
+  aliases: [zero to one, zero-to-one, comfort with ambiguity]

@@ -1,0 +1,24 @@
+Role: Senior Forward Deployed Engineer
+Location: In-Office, New York City
+Level: Senior
+
+Requirements:
+- 5-7+ years software engineering
+- Recent hands-on ownership of production software
+- Strong SWE fundamentals
+- Leading technical conversations with customers
+- Turning ambiguous cross-team problems into working solutions
+- Strong product judgment
+- Prioritizing and delivering independently
+
+Preferred:
+- B2B enterprise software
+- Prior forward-deployed or embedded engineering in production
+- Engineering-and-product work helping define what to build
+- Enterprise integrations, APIs, auth, and cross-system data flows
+- TypeScript
+
+Responsibilities:
+- Customer integrations and core product contributions
+- Reusable tooling
+- Multi-engagement management

@@ -1,0 +1,24 @@
+Role: Senior Forward Deployed Engineer
+Location: Hybrid, Austin, TX
+Level: Senior
+
+Requirements:
+- 7+ years professional software engineering including a customer-facing engineering role
+- Production-grade systems track record
+- Mission-critical services ownership
+- On-call, incident response, and HA
+- Modern frameworks and full-stack architectural breadth
+- AI-augmented development workflows
+- Deep experience with one major cloud (AWS, GCP, or Azure)
+- Zero-to-one ambiguity
+- VP-level technical discussions
+
+Preferred:
+- Workers/Developer Platform experience
+- Visible public profile (open source, blogging, conference talks)
+
+Responsibilities:
+- Workers, KV, R2, D1, Durable Objects, Workers AI, AI Gateway
+- TypeScript, Rust, Go
+- Code reviews and reference implementations
+- Security, networking, observability

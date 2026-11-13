@@ -1,0 +1,24 @@
+Role: Staff Software Engineer, AI Gateway
+Location: Hybrid, San Jose, CA / Seattle, WA
+Level: Senior
+
+Requirements:
+- 8+ years building large-scale distributed systems or network infrastructure
+- Deep expertise in API gateways, reverse proxies, load balancers, or service mesh (Envoy, NGINX, Kong, Istio)
+- Strong Go, C++, or Rust for high-performance systems
+- Production Kubernetes at scale
+- Observability (distributed tracing, metrics, structured logging)
+- Network protocols (HTTP/2, gRPC, WebSockets, TCP/UDP optimization)
+
+Preferred:
+- LLM serving infrastructure (vLLM, TensorRT-LLM, Triton)
+- Token-level routing, streaming, and rate limiting for AI workloads
+- AI gateway or model-serving proxy development
+- Network security (mTLS, WAF, DDoS mitigation)
+- Open-source contributions to gateway or proxy projects
+
+Responsibilities:
+- Build AI-native API gateway handling billions of requests
+- Intelligent routing, load balancing, failover for AI inference
+- Token-aware rate limiting and cost management
+- Multi-model and multi-provider abstraction layer

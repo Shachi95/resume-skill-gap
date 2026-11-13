@@ -1,0 +1,55 @@
+name: Service CI
+
+on:
+  push:
+    paths:
+      - 'service/**'
+      - 'scripts/**'
+      - 'evals/**'
+      - 'Makefile'
+      - '.github/workflows/service-ci.yml'
+  pull_request:
+    paths:
+      - 'service/**'
+      - 'scripts/**'
+      - 'evals/**'
+      - 'Makefile'
+      - '.github/workflows/service-ci.yml'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v4
+        with:
+          enable-cache: true
+          cache-dependency-glob: service/uv.lock
+
+      - run: cd service && uv sync --frozen
+
+      - name: Quality gate
+        run: make check
+        env:
+          HYPOTHESIS_PROFILE: ci
+
+      - name: Eval
+        run: make eval
+
+  acceptance-guard:
+    if: startsWith(github.head_ref, 'phase-') && contains(github.head_ref, '-build')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Block acceptance test changes on build branches
+        run: |
+          CHANGED=$(git diff --name-only origin/main...HEAD -- service/tests/acceptance/)
+          if [ -n "$CHANGED" ]; then
+            echo "::error::Build branches must not modify acceptance tests:"
+            echo "$CHANGED"
+            exit 1
+          fi

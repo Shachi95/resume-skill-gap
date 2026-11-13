@@ -1,0 +1,30 @@
+Role: Forward Deployed AI Engineer III
+Location: Hybrid, Austin, TX
+Level: Senior
+
+Requirements:
+- 5+ years infrastructure, platform, or enterprise systems engineering (3+ with Master's)
+- Bachelor's or equivalent practical experience
+- Design-level AWS/Azure/GCP (compute, networking, storage, IAM)
+- Terraform/Pulumi IaC with reusable modules and policy-as-code
+- Python, Go, or similar
+- SaaS and enterprise integration architecture
+- SLO and observability engineering
+- Working knowledge of LLMs, RAG, agentic systems
+- Guardrails and monitoring for AI workflows
+- Administering enterprise AI copilot/knowledge-assistant platforms
+- ADRs, design docs, and runbooks
+
+Preferred:
+- Enterprise SaaS admin/integration at scale (Glean, ServiceNow, Salesforce)
+- Platform engineering standards or golden paths
+- Mentoring
+- Open-source or internal developer-platform contributions
+- AI embedded in operational workflows
+- FinOps practices
+
+Responsibilities:
+- Incident response and RCA
+- Capacity and cost forecasting
+- Observability, runbooks
+- Mentoring junior and mid-level engineers

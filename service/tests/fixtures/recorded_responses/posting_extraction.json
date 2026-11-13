@@ -1,0 +1,40 @@
+{
+  "skills": [
+    {
+      "name": "Python",
+      "category": "language",
+      "level": "required",
+      "evidence": "5+ years of Python experience"
+    },
+    {
+      "name": "Kubernetes",
+      "category": "cloud_infra",
+      "level": "required",
+      "evidence": "Strong knowledge of Kubernetes and Docker"
+    },
+    {
+      "name": "Docker",
+      "category": "cloud_infra",
+      "level": "required",
+      "evidence": "Strong knowledge of Kubernetes and Docker"
+    },
+    {
+      "name": "AWS",
+      "category": "cloud_infra",
+      "level": "required",
+      "evidence": "Experience with AWS services"
+    },
+    {
+      "name": "Terraform",
+      "category": "cloud_infra",
+      "level": "preferred",
+      "evidence": "Familiarity with Terraform"
+    },
+    {
+      "name": "CI/CD",
+      "category": "practice",
+      "level": "preferred",
+      "evidence": "Experience with CI/CD pipelines"
+    }
+  ]
+}

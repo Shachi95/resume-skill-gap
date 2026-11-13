@@ -1,0 +1,24 @@
+Role: Principal Product Manager, Commerce AI Platform
+Location: In-Office or Remote
+Level: Expert/Leader (IC6)
+
+Requirements:
+- Bachelor's degree AND 10+ years in product, service, or program management or software development (or equivalent)
+
+Preferred:
+- Bachelor's AND 15+ years in product management or software development
+- 6+ years taking a product to market (design, product-market fit, launch)
+- 8+ years improving product metrics (growth, usage, churn)
+- 5+ years in product catalogs, marketplaces, or commerce search (taxonomy, merchant feeds)
+- Shipping and scaling externally consumed APIs or data platforms
+- Defining quality metrics for data or AI systems (coverage, precision/recall, freshness, factuality)
+- Technical fluency in data pipelines, ML matching, LLM grounding
+- Leading large senior engineering teams as IC; influencing external partners
+
+Responsibilities:
+- Catalog APIs (product, Product Graph)
+- Schemas and versioning
+- Responsible AI, privacy, security, data rights
+- Merchant controls and attribution
+- PRDs and release criteria
+- Go-to-market with partner and product marketing teams

@@ -1,0 +1,22 @@
+Role: Senior Forward Deployed Engineer, Strategic Accounts
+Location: In-Office or Remote (NYC or SF)
+Level: Senior
+
+Requirements:
+- Technical depth (APIs, SDKs, webhooks, cloud, customer stacks)
+- Excellent software engineering
+- Writing code, reading logs, and shipping fixes
+- Comfort with AI coding tools
+- Customer obsession
+- High ownership and urgency
+- Learning quickly in ambiguity
+- Credibility with technical and non-technical stakeholders
+
+Preferred:
+- Voice AI, speech-to-text, NLP, or conversational AI
+- Early-stage startup or founder-led experience
+- Embedded in a large enterprise customer's product deployment
+
+Responsibilities:
+- POS integrations, menu structures, ordering flows
+- Reference architectures and playbooks

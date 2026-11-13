@@ -1,0 +1,25 @@
+Role: Staff Product Manager, AI Applications
+Location: Remote, USA
+Level: Staff
+
+Requirements:
+- Excellent product management judgment; owning product and roadmap
+- A shipped product that people paid for (consumer or prosumer)
+- Zero-to-one product definition (idea to first version real users adopted)
+- Deep AI fluency proven by shipped work (personally building/shipping AI into end-user apps)
+- Technical depth (models, latency, privacy, platform trade-offs; reads code; prototypes)
+- Design sense (simple interfaces, mockups, prototypes, user testing)
+- Distrusts a metric before building on it
+- Clear communication with executives
+
+Preferred:
+- Native desktop or mobile app building (Windows, macOS, iOS)
+- Shipping through distribution partners
+- Voice, audio, or real-time systems
+- Company with both self-serve and enterprise motions
+
+Responsibilities:
+- AI application product line strategy
+- Acquisition, activation, retention, monetization metrics
+- Prototyping
+- Research and engineering partnership

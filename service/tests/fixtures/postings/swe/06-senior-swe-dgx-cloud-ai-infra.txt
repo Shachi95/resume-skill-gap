@@ -1,0 +1,24 @@
+Role: Senior Software Engineer, DGX Cloud AI Infrastructure
+Location: Hybrid, Seattle, WA
+Level: Senior
+
+Requirements:
+- 8+ years in software engineering, systems engineering, or infrastructure
+- 3+ years Kubernetes (cluster lifecycle, operator patterns, CRDs, admission controllers)
+- Deep understanding of compute orchestration for AI/ML (GPU scheduling, multi-tenant isolation, job lifecycle)
+- Go or Python (production-grade infrastructure tooling)
+- Cloud-native patterns (microservices, service mesh, event-driven architectures)
+- Linux systems internals (kernel, cgroups, namespaces, networking)
+
+Preferred:
+- NVIDIA GPU stack (drivers, CUDA, NCCL, DCGM, MIG)
+- Bare-metal provisioning (PXE, IPMI/BMC, firmware management)
+- Networking for HPC/AI (InfiniBand, RoCE, GPUDirect RDMA)
+- Slurm, Ray, or similar HPC schedulers
+- Contributions to open-source infrastructure projects
+
+Responsibilities:
+- Build and operate DGX Cloud infrastructure at scale
+- Kubernetes-based GPU cluster management
+- Bare-metal and network automation
+- Observability and reliability for AI workloads

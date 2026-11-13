@@ -1,0 +1,23 @@
+Role: Sr Staff Forward Deployed Engineer, Enterprise AI
+Location: Hybrid (3 locations)
+Level: Senior (Sr Staff equivalent)
+
+Requirements:
+- Deep experience at Sr Staff Engineer equivalent scope
+- Leading ambiguous cross-functional initiatives to production adoption
+- Strong product judgment
+- Designing applications, platforms, dev tools, workflow or distributed systems
+- Practical LLM experience (tool use, context engineering, agents, evals, human-in-the-loop)
+- Distinguishing prototype vs department solution vs platform capability
+- Exceptional communication
+
+Preferred:
+- Founding/early FDE, product engineer, PM, solutions architect or tech lead
+- Internal developer/AI platform work
+- Evaluation systems for nondeterministic products
+- Financial services or regulated environment
+
+Responsibilities:
+- Agentic solutions, evaluations, integrations
+- Reusable tools and platform components
+- Playbooks and operating models

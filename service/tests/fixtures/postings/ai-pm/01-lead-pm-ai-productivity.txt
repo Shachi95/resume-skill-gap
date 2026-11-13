@@ -1,0 +1,23 @@
+Role: Lead Product Manager, AI Productivity and Adoption
+Location: Hybrid, Seattle, WA
+Level: Manager
+
+Requirements:
+- Bachelor's degree
+- 4+ years of experience
+
+Preferred:
+- AI productivity adoption across cloud-native products
+- Translating product strategy into prioritized delivery roadmaps
+- AI-human collaboration, rapid experimentation, digital tooling
+- Managing cross-functional product teams through software delivery
+- Analytical thinking for requirements, testing, and release decisions
+- Guiding client conversations on adoption, value, and workflow change
+
+Responsibilities:
+- User stories and acceptance criteria
+- Analytics and rapid experimentation
+- CI/CD and testing practices
+- Cloud architecture and application development
+- Risk and dependency monitoring
+- Mentoring junior staff

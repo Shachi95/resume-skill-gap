@@ -1,0 +1,9 @@
+roles:
+  software_engineer:
+    include: []
+  ai_engineer:
+    include: []
+  fde:
+    include: []
+exclude: []
+precedence: [fde, software_engineer]

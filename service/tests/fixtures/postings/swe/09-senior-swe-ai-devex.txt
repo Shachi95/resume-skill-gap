@@ -1,0 +1,24 @@
+Role: Senior Software Engineer, AI Developer Experience
+Location: Remote, US
+Level: Senior
+
+Requirements:
+- 5+ years software engineering with focus on developer tools or infrastructure
+- Strong Python and TypeScript
+- Experience building SDKs, CLIs, or developer-facing APIs
+- Understanding of LLMs and AI development workflows
+- Building tools that improve developer productivity
+- Strong technical writing and documentation skills
+
+Preferred:
+- Built or maintained an open-source developer tool
+- Experience with LLM evaluation frameworks
+- Prompt engineering and model evaluation
+- Developer experience design thinking
+- Distributed tracing and observability
+
+Responsibilities:
+- Build SDKs, CLIs, and developer tooling for AI platform
+- Design and implement evaluation frameworks
+- Create documentation, tutorials, and example applications
+- Improve developer onboarding and time-to-production

@@ -1,0 +1,21 @@
+Role: Software Developer with AI, Manager
+Location: Hybrid, Seattle, WA
+Level: Mid level
+
+Requirements:
+- Bachelor's degree
+- 4+ years of experience
+
+Preferred:
+- Leading software teams delivering AI-enabled solutions
+- Python, Java, JavaScript, or cloud platforms
+- Project planning, budgeting, milestone tracking
+- Mentoring via code review
+- CI/CD, testing, application lifecycle management
+- Navigating client priorities and delivery timelines
+
+Responsibilities:
+- Lead software engineering workstreams
+- Develop and review application code across web, mobile, enterprise platforms
+- Apply AI fluency to shape software solutions and automation
+- Translate business requirements into technical specifications

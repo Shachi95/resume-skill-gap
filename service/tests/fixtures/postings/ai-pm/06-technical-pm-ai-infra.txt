@@ -1,0 +1,25 @@
+Role: Technical Product Manager, AI Infra Resilience
+Location: Hybrid, Seattle, WA
+Level: Expert/Leader (Level 5/6)
+
+Requirements:
+- 12+ years total experience
+- 5+ years in product management, solutions architecture, software engineering, or SRE on technical infrastructure
+- Technical depth in GPU or AI infrastructure
+- GPU failure modes (XID codes, ECC errors, DCGM metrics, NVLink, PCIe health signals)
+- Why AI workloads fail (NCCL timeouts, framework errors, hardware vs software faults)
+- Telemetry sources (DCGM, sysfs, dmesg)
+- Strong communication
+- Bachelor's in CS or equivalent
+
+Preferred:
+- Former SRE or infra engineer on GPU clusters (triaged job failures, parsed XID logs)
+- GPU scheduling (Slurm, Kueue, Kubernetes schedulers, topology-aware placement)
+- Building structured diagnostics products (health verdicts, log analysis, observability APIs)
+- Open-source infrastructure project experience
+
+Responsibilities:
+- Workload failure attribution and telemetry
+- Health checks and deployment experiences
+- Kubernetes and developer platforms
+- Open-source community strategy

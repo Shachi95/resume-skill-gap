@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd /Users/shachishah/Documents/Projects/skills-analyser && make check 2>&1 | tail -20; EXIT=${PIPESTATUS[0]}; if [ $EXIT -ne 0 ]; then echo '{\"decision\": \"block\", \"reason\": \"make check failed — fix before ending session\"}'; fi; exit $EXIT",
+            "timeout": 120,
+            "statusMessage": "Running make check..."
+          }
+        ]
+      }
+    ]
+  }
+}

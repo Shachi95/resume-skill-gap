@@ -1,0 +1,10 @@
+roles:
+  software_engineer:
+    include:
+      - '[invalid regex('
+  ai_engineer:
+    include: []
+  fde:
+    include: []
+exclude: []
+precedence: [fde, ai_engineer, software_engineer]

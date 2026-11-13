@@ -1,0 +1,24 @@
+Role: Senior Product Manager, AI Products (Auth)
+Location: Hybrid, Seattle, WA
+Level: Senior
+
+Requirements:
+- 5-7+ years product management with track record building agentic products
+- Agentic AI developer credibility (understands agent ecosystem, writes code, APIs and SDKs)
+- Identity and AI protocols: OAuth, OIDC, SAML, MCP, mTLS
+- Proven 0-to-1 and feature-launch experience
+- Product instincts on developer pain points and security friction
+- Growth mindset with technical depth (API specs, data schemas, AI standards, GTM strategy)
+- Influence without authority across engineering, design, marketing, developer relations, sales
+- Passion for AI and identity
+
+Preferred:
+- Startup founder or early-stage experience (significant plus)
+- B2C/B2B SaaS and developer-facing product experience
+
+Responsibilities:
+- Agent identity and access management
+- MCP and agent interoperability
+- Prototyping, backlog management
+- Documentation and enablement assets
+- GTM launch support

@@ -1,0 +1,8 @@
+alpha:
+  category: language
+  aliases: []
+  parent: beta
+beta:
+  category: language
+  aliases: []
+  parent: alpha

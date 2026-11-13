@@ -1,0 +1,24 @@
+Role: AI Cloud Product Manager
+Location: Remote, US or Canada
+Level: Expert/Leader
+
+Requirements:
+- Bachelor's in engineering, information systems, CS, or related
+- 8-9+ years product management or related experience
+- Cloud architectures (Kubernetes) and/or AI infra platforms (PyTorch, vLLM, CUDA, Vertex AI, SageMaker)
+- Product vision and roadmap trade-offs
+- Moving products from early adoption to production
+- Security, privacy, and compliance for cloud platforms
+- Analytical and systems thinking (performance, scalability, cost)
+- Strong communication and growth mindset
+
+Preferred:
+- Master's or PhD in CS or related
+- Developing, training, or deploying ML models into production
+- Startup experience
+
+Responsibilities:
+- High-performance model-serving cloud platform
+- Performance and cost visibility
+- Integrations with hardware, cloud, and ecosystem partners
+- Roadmaps and success metrics, GTM

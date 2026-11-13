@@ -1,0 +1,25 @@
+Role: Senior Forward Deployed Engineer
+Location: In-Office, New York, NY
+Level: Senior
+
+Requirements:
+- 5-8+ years hands-on engineering
+- Taking partner/client implementations through scope, design, build, go-live, and maintenance
+- Strong Java
+- OAuth/OIDC, webhooks, versioning, and edge-case reasoning
+- Experience building with client/partner engineering teams
+- Translating solution designs into implementation plans
+- Excellent communication from junior devs to CTOs
+- Demonstrable AI-assisted development workflow
+- Frequent travel
+
+Preferred:
+- Spring Boot/REST
+- Informal mentoring
+- Fintech, payments, POS, or loyalty platform experience
+- GCP, CI/CD, containers, IaC
+
+Responsibilities:
+- Developer docs and integration guides
+- Post-go-live maintenance
+- AI-assisted development (Claude, Cursor, GitHub Copilot)

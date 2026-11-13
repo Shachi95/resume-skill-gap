@@ -1,0 +1,28 @@
+Role: Senior Lead Software Engineer — AI/ML Training Infrastructure
+Location: Hybrid, Seattle, WA
+Level: Senior
+
+Requirements:
+- 5+ years applied experience with formal training or certification in software engineering
+- Hands-on scalable/HA infrastructure for ML training and/or inference
+- GPU infrastructure, accelerators, high-speed interconnects
+- Kubernetes and containers including Docker (cluster ops, scheduling, observability)
+- Proficiency in Python, Go, Java, or C#
+- Cloud component architecture (microservices, compute, storage, networking, security)
+- Enterprise-authorized AI-assisted dev tools
+- Responsible AI use
+
+Preferred:
+- Performance monitoring/profiling
+- NVIDIA DCGM, BCM, drivers, CUDA
+- MLflow or similar model lifecycle management
+- Distributed training, Ray.io, Slurm
+- High-throughput/low-latency networking
+- Cloud data services, big data, Linux, storage
+- ML platform design
+
+Responsibilities:
+- Design, build, operate secure scalable cloud and GPU infrastructure for AI/ML
+- CI/CD pipelines, IaC, SDLC toolchain
+- Multi-GPU/multi-node training support
+- Technical leadership and mentoring

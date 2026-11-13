@@ -1,0 +1,24 @@
+Role: Software Engineer, AI Tooling & Infrastructure
+Location: Hybrid, Seattle, WA
+Level: Mid
+
+Requirements:
+- 3+ years software engineering
+- Python and/or C++ proficiency
+- Experience with ML frameworks (PyTorch, TensorFlow, or JAX)
+- Cloud infrastructure (AWS, GCP, or Azure)
+- Linux systems administration
+- Version control (Git) and CI/CD
+
+Preferred:
+- GPU programming (CUDA, OpenCL)
+- Container orchestration (Kubernetes, Docker)
+- ML model optimization and deployment
+- Edge computing or embedded systems
+- Security clearance or eligibility
+
+Responsibilities:
+- Build and maintain AI/ML development and deployment tooling
+- Optimize model training and inference pipelines
+- Support internal ML engineers with infrastructure needs
+- Maintain security and compliance for classified workloads

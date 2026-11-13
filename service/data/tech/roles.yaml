@@ -1,0 +1,42 @@
+roles:
+  software_engineer:
+    include:
+      - '\bsoftware\s+(engineer|developer|dev)\b'
+      - '\b(backend|frontend|fullstack|full[\s-]stack)\s+(engineer|developer|dev)\b'
+      - '\bplatform\s+engineer\b'
+      - '\binfrastructure\s+engineer\b'
+      - '\bdevops\s+engineer\b'
+      - '\bsre\b'
+      - '\bsite\s+reliability\s+engineer\b'
+      - '\bmobile\s+(engineer|developer)\b'
+  ai_engineer:
+    include:
+      - '\b(ai|ml|machine\s+learning)\s+engineer\b'
+      - '\bml\s+infrastructure\s+engineer\b'
+      - '\bapplied\s+scientist\b'
+      - '\b(ai|ml)\s+platform\s+engineer\b'
+  fde:
+    include:
+      - '\bforward[\s-]deployed\s+engineer\b'
+      - '\bsolutions?\s+(engineer|architect)\b'
+      - '\bcustomer\s+engineer\b'
+      - '\bfield\s+engineer\b'
+      - '\benterprise\s+(ai\s+)?engineer\b'
+
+exclude:
+  - '\bintern\b'
+  - '\b(new[\s-])?grad(uate)?\b'
+  - '\bjunior\b'
+  - '\b(engineering\s+)?manager\b'
+  - '\bdirector\b'
+  - '\bvp\b'
+  - '\brecruiter\b'
+  - '\bsales\s+engineer\b'
+  - '\bdata\s+scientist\b'
+  - '\bresearch\s+scientist\b'
+  - '\bqa\b'
+  - '\bsdet\b'
+  - '\btest\s+engineer\b'
+  - '\bproduct\s+manager\b'
+
+precedence: [fde, ai_engineer, software_engineer]

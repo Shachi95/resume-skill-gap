@@ -1,0 +1,7 @@
+{
+  "status": 200,
+  "headers": {
+    "content-type": "text/html; charset=utf-8"
+  },
+  "body": "<html><body>\n<h1>Senior Software Engineer</h1>\n<p>Requirements: Python, Java, Kubernetes</p>\n</body></html>"
+}

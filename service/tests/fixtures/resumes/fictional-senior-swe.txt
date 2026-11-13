@@ -1,0 +1,44 @@
+Senior Software Engineer
+Seattle, WA | 7 years experience
+
+SUMMARY
+Senior Software Engineer with 7 years of experience in backend and platform engineering across large-scale cloud environments. Delivers distributed, cloud-native services and data workflows that improve reliability and reduce operational effort. Experienced in system design, cross-team technical leadership, and production operations.
+
+SKILLS
+Languages: Java, Python, JavaScript, TypeScript, SQL
+Cloud: AWS (S3, Lambda, Kinesis, ECS, SQS, SNS, Step Functions, API Gateway), OCI
+Backend: Node.js, REST APIs, microservices, event-driven systems
+Data: DynamoDB, Redshift, Elasticsearch, MongoDB
+Infrastructure: Docker, Kubernetes, CloudFormation, CDK, CloudWatch, Grafana, Kibana
+Frontend: React
+
+EXPERIENCE
+
+Senior Software Engineer (Nov 2024 - Present)
+- Reversed multi-region CI/CD rollback order, cutting rollback time from 200 to 45 minutes (78%).
+- Built a self-service limit management system, reducing manual requests by 85% (3,500 to fewer than 500/month).
+- Diagnosed critical build and canary test failures during region rollout using AI-driven debugging, reducing canary failure rates by 20% and build failures by 30%.
+- Led end-to-end pentesting setup for 2 certificate services under a compliance mandate, uncovering 1 critical and 2 minor vulnerabilities.
+- Built import workflows to orchestrate migration of resources from staging to production regions.
+- Mentored a new engineer through structured onboarding guidance.
+
+Software Engineer (Mar 2020 - Nov 2024)
+- Represented team on an org-wide panel setting Tier-2 operational and test-coverage standards, reaching 90% coverage and cutting post-release defects by 30%.
+- Architected a shared data transformation platform converting DynamoDB data to Redshift, driving org-wide analytics adoption and reducing analysis time by 20%.
+- Launched a real-time data extraction microservice; resolved Elasticsearch sync lag via SQS visibility timeout, preventing DLQ crashes. Reused architecture to migrate 7 years of historical data, reducing workload by 40%.
+- Engineered a UI to trigger ML model execution and display campaign scoring; implemented async polling with run-id persistence for fault-tolerant result retrieval.
+- Streamlined global templates and sorting strategies, reducing testing time by over 50% across regions.
+- Built an internal web service to centralize marketing template data and enable end-to-end campaign tracking, reducing information retrieval time by 30%.
+- Delivered a dynamic launch gating tool enabling admins to toggle tests between automated and manual without engineer support.
+
+Database Intern (Feb 2019 - Aug 2019)
+- Developed crawlers and parsers using Selenium WebDriver and BeautifulSoup for automated data extraction.
+- Devised a daily alert system for MongoDB, reducing maintenance time by 30%.
+- Implemented self-healing maintenance workflows, reducing downtime by 25%.
+
+EDUCATION
+- Global Business Program (in progress, Oct 2026 - Jun 2027)
+- Master of Computer Science (Dec 2019)
+- Bachelor of Engineering, Computer Engineering (Jul 2017)
+
+Note: Name and contact details removed per repo policy. This resume is used for testing the skill-gap analysis pipeline.

@@ -1,0 +1,22 @@
+Role: Staff Product Manager, AI Inference
+Location: In-Office, Bellevue, WA
+Level: Senior
+
+Requirements:
+- 8+ years product management (5+ in cloud services or AI/ML market)
+- Hands-on AI/ML workloads including foundation model inference
+- Inference engines (vLLM, SGLang, TensorRT-LLM, llm-d)
+- Optimization techniques (quantization, speculative decoding)
+- GPU infrastructure and cloud-native architectures (Kubernetes, microservices)
+- Cross-functional team leadership, decision-making, mentoring
+- Customer needs to features
+- Bachelor's or Master's in CS, engineering, or related
+
+Preferred:
+- MBA or equivalent experience
+
+Responsibilities:
+- AI inference product strategy
+- Inference portfolio and GPU/model-serving architectures
+- Roadmap, go-to-market pricing and positioning
+- Competitive analysis and customer engagement

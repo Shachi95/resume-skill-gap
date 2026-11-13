@@ -1,0 +1,25 @@
+Role: Principal Software Engineer, Data Platform — Data Trust & AI Context
+Location: Hybrid, Seattle, WA
+Level: Expert/Leader
+
+Requirements:
+- 15+ years software or data engineering (or 13+ with Master's)
+- Data trust stack (data contracts, metadata catalogs, data quality frameworks, lineage, RBAC/ABAC)
+- Snowflake, Kafka or similar, AWS data services
+- Python, Java, or Go and advanced SQL
+- Terraform and CI/CD
+- Distributed platform architecture
+- Cross-organizational leadership
+- Tier-0/mission-critical operations
+
+Preferred:
+- FinTech/regulated industry (CCPA/GDPR, auditability)
+- AI infrastructure (semantic layers, knowledge graphs, context engines)
+- Open-source data/metadata contributions (Apache Iceberg, OpenMetadata, DataHub)
+
+Responsibilities:
+- Data Trust architecture and strategy
+- Declarative enforcement primitives
+- Semantic context for analytics and AI
+- Reliability across batch and streaming data
+- Observability, SLOs, automated enforcement

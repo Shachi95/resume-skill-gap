@@ -1,0 +1,26 @@
+Role: Senior Software Engineer, AI Agentic Platform
+Location: In-Office, Seattle, WA
+Level: Senior
+
+Requirements:
+- 6+ years backend with distributed systems and platform infrastructure
+- 2+ years agentic AI or LLM orchestration
+- Python, or Java/TypeScript, with async concurrency and API design
+- Agent frameworks/protocols (LangGraph, Anthropic MCP, Google ADK, AutoGen, A2A, LlamaIndex)
+- Microservices, Kubernetes, AWS
+- Observability and LLMOps
+- Relational and vector databases, Kafka or SQS, caching
+- AI coding tools (Claude Code, GitHub Copilot)
+
+Preferred:
+- Advanced degree in CS/ML
+- Custom agent harnesses, fine-tuning, RLHF/RLAIF
+- Security compliance for financial or mobility data
+- Open-source agent frameworks or MCP servers
+
+Responsibilities:
+- Build production-grade agentic platform infrastructure
+- LLM inference routing, caching, semantic search
+- Evaluation, tracing, observability frameworks (LLMOps/AIOps)
+- Developer tooling, agent SDKs, CI/CD automation
+- Enterprise guardrails, rate-limiting, sandboxing
