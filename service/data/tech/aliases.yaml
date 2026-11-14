@@ -57,14 +57,13 @@ html_css:
 php:
   category: language
   aliases: []
-
 # ── Frameworks & Libraries ────────────────────────────────────────────────────
 react:
   category: framework
   aliases: [reactjs, react.js]
 node_js:
   category: framework
-  aliases: [node, nodejs, node.js]
+  aliases: [node, nodejs, node.js, node js]
 django:
   category: framework
   aliases: []
@@ -76,13 +75,13 @@ fastapi:
   aliases: [fast api]
 spring_boot:
   category: framework
-  aliases: [spring, spring framework, springboot]
+  aliases: [spring, spring framework, springboot, spring boot]
 express:
   category: framework
   aliases: [expressjs, express.js]
 next_js:
   category: framework
-  aliases: [nextjs, next.js, next]
+  aliases: [nextjs, next.js, next, next js]
 vue:
   category: framework
   aliases: [vuejs, vue.js]
@@ -100,13 +99,13 @@ autogen:
   aliases: [auto gen]
 crew_ai:
   category: framework
-  aliases: [crewai]
+  aliases: [crewai, crew ai]
 llamaindex:
   category: framework
   aliases: [llama index, llama_index]
 anthropic_mcp:
   category: framework
-  aliases: [mcp, model context protocol]
+  aliases: [mcp, model context protocol, anthropic mcp]
 pydantic:
   category: framework
   aliases: []
@@ -118,7 +117,7 @@ grpc:
   aliases: [g-rpc, grpc-web]
 rest_api:
   category: framework
-  aliases: [rest, restful, restful api, rest apis]
+  aliases: [rest, restful, restful api, rest apis, rest api]
 protobuf:
   category: framework
   aliases: [protocol buffers, proto]
@@ -134,7 +133,6 @@ tailwind:
 sqlalchemy:
   category: framework
   aliases: [sql alchemy]
-
 # ── Cloud & Infrastructure ────────────────────────────────────────────────────
 aws:
   category: cloud_infra
@@ -160,7 +158,7 @@ cloudformation:
   parent: aws
 aws_cdk:
   category: cloud_infra
-  aliases: [cdk, cloud development kit]
+  aliases: [cdk, cloud development kit, aws cdk]
   parent: aws
 pulumi:
   category: cloud_infra
@@ -204,19 +202,19 @@ linux:
   aliases: [linux systems, linux internals, cgroups, namespaces]
 github_actions:
   category: cloud_infra
-  aliases: [gha, github ci]
+  aliases: [gha, github ci, github actions]
 jenkins:
   category: cloud_infra
   aliases: []
 gitlab_ci:
   category: cloud_infra
-  aliases: [gitlab ci/cd, gitlab pipelines]
+  aliases: [gitlab ci/cd, gitlab pipelines, gitlab ci]
 circleci:
   category: cloud_infra
   aliases: [circle ci]
 argo_cd:
   category: cloud_infra
-  aliases: [argocd, argo]
+  aliases: [argocd, argo, argo cd]
 vault:
   category: cloud_infra
   aliases: [hashicorp vault]
@@ -246,7 +244,7 @@ kinesis:
   parent: aws
 step_functions:
   category: cloud_infra
-  aliases: [aws step functions]
+  aliases: [aws step functions, step functions]
   parent: aws
 vpc:
   category: cloud_infra
@@ -254,22 +252,21 @@ vpc:
   parent: aws
 load_balancing:
   category: cloud_infra
-  aliases: [load balancer, elb, alb, nlb]
+  aliases: [load balancer, elb, alb, nlb, load balancing]
 service_mesh:
   category: cloud_infra
-  aliases: [service meshes]
+  aliases: [service meshes, service mesh]
 api_gateway:
   category: cloud_infra
-  aliases: [api gateways, reverse proxy]
+  aliases: [api gateways, reverse proxy, api gateway]
 vertex_ai:
   category: cloud_infra
-  aliases: [google vertex ai, vertex]
+  aliases: [google vertex ai, vertex, vertex ai]
   parent: gcp
 sagemaker:
   category: cloud_infra
   aliases: [aws sagemaker, amazon sagemaker]
   parent: aws
-
 # ── Data ──────────────────────────────────────────────────────────────────────
 postgresql:
   category: data
@@ -330,11 +327,10 @@ parquet:
   aliases: [apache parquet]
 apache_iceberg:
   category: data
-  aliases: [iceberg]
+  aliases: [iceberg, apache iceberg]
 delta_lake:
   category: data
-  aliases: [delta, databricks delta lake]
-
+  aliases: [delta, databricks delta lake, delta lake]
 # ── AI & ML ───────────────────────────────────────────────────────────────────
 pytorch:
   category: ai_ml
@@ -368,16 +364,16 @@ vllm:
   aliases: [v-llm]
 tensorrt_llm:
   category: ai_ml
-  aliases: [tensorrt, trt-llm]
+  aliases: [tensorrt, trt-llm, tensorrt llm]
 triton_inference_server:
   category: ai_ml
-  aliases: [triton, nvidia triton]
+  aliases: [triton, nvidia triton, triton inference server]
 cuda:
   category: ai_ml
   aliases: [nvidia cuda, gpu programming]
 nvidia_dcgm:
   category: ai_ml
-  aliases: [dcgm, nvidia data center gpu manager]
+  aliases: [dcgm, nvidia data center gpu manager, nvidia dcgm]
 llm:
   category: ai_ml
   aliases: [large language model, large language models, llms]
@@ -386,7 +382,7 @@ rag:
   aliases: [retrieval augmented generation, retrieval-augmented generation]
 vector_database:
   category: ai_ml
-  aliases: [vector db, vector store, vector databases]
+  aliases: [vector db, vector store, vector databases, vector database]
 pgvector:
   category: ai_ml
   aliases: [pg_vector]
@@ -402,16 +398,17 @@ embeddings:
   aliases: [text embeddings, embedding models, vector embeddings]
 fine_tuning:
   category: ai_ml
-  aliases: [finetuning, fine tuning, model fine-tuning]
+  aliases: [finetuning, fine tuning, fine-tuning, model fine-tuning]
 prompt_engineering:
   category: ai_ml
-  aliases: [prompt design, prompting]
+  aliases: [prompt design, prompting, prompt engineering]
 model_evaluation:
   category: ai_ml
-  aliases: [ml evaluation, model eval, evals, ai evaluation]
+  aliases: [ml evaluation, model eval, evals, ai evaluation, model evaluation, model evaluations, llm evaluation, evaluation and failure modes, evaluation frameworks, evaluation]
+  ambiguous: true
 computer_vision:
   category: ai_ml
-  aliases: [cv, image recognition]
+  aliases: [cv, image recognition, computer vision]
 nlp:
   category: ai_ml
   aliases: [natural language processing, text processing]
@@ -426,57 +423,57 @@ onnx:
   aliases: [open neural network exchange]
 hugging_face:
   category: ai_ml
-  aliases: [hf, huggingface, transformers library]
+  aliases: [hf, huggingface, transformers library, hugging face]
 rlhf:
   category: ai_ml
   aliases: [rlaif, reinforcement learning from human feedback]
 reinforcement_learning:
   category: ai_ml
-  aliases: [rl]
+  aliases: [rl, reinforcement learning]
 distributed_training:
   category: ai_ml
-  aliases: [multi-gpu training, multi-node training]
+  aliases: [multi-gpu training, multi-node training, distributed training]
 model_serving:
   category: ai_ml
-  aliases: [inference serving, llm serving, model inference]
+  aliases: [inference serving, llm serving, model inference, model serving, inference routing]
 agentic_ai:
   category: ai_ml
-  aliases: [ai agents, agent systems, agent frameworks, agentic systems]
+  aliases: [ai agents, agent systems, agent frameworks, agentic systems, agentic ai, agentic solutions]
 context_engineering:
   category: ai_ml
-  aliases: []
+  aliases: [context engineering]
 tool_use:
   category: ai_ml
-  aliases: [tool calling, function calling]
+  aliases: [tool calling, function calling, tool use, tool invocation]
 responsible_ai:
   category: ai_ml
-  aliases: [ai safety, ai ethics, ai guardrails]
+  aliases: [ai safety, ai ethics, ai guardrails, responsible ai]
 edge_ai:
   category: ai_ml
-  aliases: [edge computing ai, edge ml]
+  aliases: [edge computing ai, edge ml, edge ai, edge computing]
 conversational_ai:
   category: ai_ml
-  aliases: [chatbot, voice ai, speech to text, dialog systems]
+  aliases: [chatbot, voice ai, speech to text, dialog systems, conversational ai, conversational products, conversational]
+  ambiguous: true
 quantization:
   category: ai_ml
   aliases: [model quantization]
-
 # ── Practices ─────────────────────────────────────────────────────────────────
 distributed_systems:
   category: practice
-  aliases: [distributed computing, distributed architecture]
+  aliases: [distributed computing, distributed architecture, distributed systems]
 microservices:
   category: practice
   aliases: [microservice architecture, microservice, micro services]
 event_driven_architecture:
   category: practice
-  aliases: [event driven, event-driven, eda, event sourcing]
+  aliases: [event driven, event-driven, eda, event sourcing, event driven architecture]
 ci_cd:
   category: practice
   aliases: [ci/cd, cicd, continuous integration, continuous deployment, continuous delivery]
 infrastructure_as_code:
   category: practice
-  aliases: [iac, infra as code]
+  aliases: [iac, infra as code, infrastructure as code]
 observability:
   category: practice
   aliases: [distributed tracing, structured logging, o11y]
@@ -485,10 +482,10 @@ monitoring:
   aliases: [alerting, metrics collection]
 api_design:
   category: practice
-  aliases: [api architecture, sdk design]
+  aliases: [api architecture, sdk design, api design]
 system_design:
   category: practice
-  aliases: [architecture design, systems architecture]
+  aliases: [architecture design, systems architecture, system design]
 testing:
   category: practice
   aliases: [unit testing, integration testing, test automation]
@@ -503,10 +500,10 @@ scrum:
   aliases: [sprint planning]
 code_review:
   category: practice
-  aliases: [code reviews, peer review]
+  aliases: [code reviews, peer review, code review]
 technical_writing:
   category: practice
-  aliases: [tech writing, documentation writing, developer docs]
+  aliases: [tech writing, documentation writing, developer docs, technical writing]
 documentation:
   category: practice
   aliases: [docs, runbooks, adrs]
@@ -518,10 +515,10 @@ compliance:
   aliases: [regulatory compliance, gdpr, ccpa, sox, hipaa]
 performance_optimization:
   category: practice
-  aliases: [performance tuning, profiling, benchmarking]
+  aliases: [performance tuning, profiling, benchmarking, performance optimization]
 incident_management:
   category: practice
-  aliases: [incident response, on-call, oncall, rca, root cause analysis]
+  aliases: [incident response, on-call, oncall, rca, root cause analysis, incident management]
 sre:
   category: practice
   aliases: [site reliability engineering, slos, slas]
@@ -530,53 +527,52 @@ devops:
   aliases: [dev ops]
 open_source:
   category: practice
-  aliases: [oss, open source contributions, open-source]
+  aliases: [oss, open source contributions, open-source, open source]
 full_stack:
   category: practice
-  aliases: [full-stack, fullstack, full stack development]
-
+  aliases: [full-stack, fullstack, full stack development, full stack]
 # ── Customer-Facing ───────────────────────────────────────────────────────────
 client_engineering:
   category: customer_facing
-  aliases: [customer engineering, customer-facing engineering, field engineering]
+  aliases: [customer engineering, customer-facing engineering, field engineering, client engineering, client/partner engineering]
 solutions_architecture:
   category: customer_facing
-  aliases: [solution architecture, solutions architect, solution design]
+  aliases: [solution architecture, solutions architect, solution design, solution designs, solutions architecture]
 technical_consulting:
   category: customer_facing
-  aliases: [tech consulting, implementation consulting]
+  aliases: [tech consulting, implementation consulting, technical consulting]
 stakeholder_management:
   category: customer_facing
-  aliases: [executive communication, c-suite, vp-level discussions]
+  aliases: [executive communication, c-suite, vp-level discussions, stakeholder management, stakeholders, stakeholder communication, communication with executives]
+  ambiguous: true
 demo_delivery:
   category: customer_facing
-  aliases: [product demos, technical demos, poc delivery]
+  aliases: [product demos, technical demos, poc delivery, demo delivery]
 customer_success:
   category: customer_facing
-  aliases: [customer engagement, customer adoption]
+  aliases: [customer engagement, customer adoption, customer success]
 pre_sales:
   category: customer_facing
-  aliases: [pre-sales engineering, sales engineering support]
+  aliases: [pre-sales engineering, sales engineering support, pre sales]
 travel_willingness:
   category: customer_facing
-  aliases: [travel required, travel up to]
+  aliases: [travel required, travel up to, travel willingness, frequent travel]
 enterprise_integration:
   category: customer_facing
-  aliases: [partner integration, system integration, enterprise saas]
-
+  aliases: [partner integration, system integration, enterprise saas, enterprise integration]
 # ── Soft Skills ───────────────────────────────────────────────────────────────
 cross_team_leadership:
   category: soft_skill
-  aliases: [cross-functional leadership, cross-org leadership, technical leadership]
+  aliases: [cross-functional leadership, cross-org leadership, technical leadership, cross team leadership, cross-functional team leadership, cross functional team leadership, cross-functional initiatives, cross-functional product teams]
 mentoring:
   category: soft_skill
   aliases: [coaching, mentorship]
 communication:
   category: soft_skill
-  aliases: [written communication, verbal communication, storytelling]
+  aliases: [written communication, verbal communication, storytelling, communication skills]
 problem_solving:
   category: soft_skill
-  aliases: [analytical thinking, critical thinking]
+  aliases: [analytical thinking, critical thinking, problem solving]
 ownership:
   category: soft_skill
   aliases: [bias for action, accountability, entrepreneurial mindset]
@@ -585,13 +581,13 @@ collaboration:
   aliases: [teamwork, cross-functional collaboration]
 project_management:
   category: soft_skill
-  aliases: [program management, delivery management]
+  aliases: [program management, delivery management, project management]
 presentation:
   category: soft_skill
   aliases: [public speaking, conference talks, technical presentations]
 product_judgment:
   category: soft_skill
-  aliases: [product instincts, product sense, product thinking]
+  aliases: [product instincts, product sense, product thinking, product judgment, product management judgment]
 ambiguity_tolerance:
   category: soft_skill
-  aliases: [zero to one, zero-to-one, comfort with ambiguity]
+  aliases: [zero to one, zero-to-one, comfort with ambiguity, ambiguity tolerance, ambiguous environments, thrive in ambiguity, comfortable with ambiguity, in ambiguity, comfort in ambiguous]
