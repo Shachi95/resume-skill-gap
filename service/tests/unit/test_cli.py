@@ -21,10 +21,9 @@ class TestCli:
         assert result.exit_code == 0
         assert result.output.strip()
 
-    def test_analyze_placeholder(self) -> None:
+    def test_analyze_missing_files_fail(self) -> None:
         result = runner.invoke(app, ["analyze", "posting.txt", "--resume", "resume.txt"])
-        assert result.exit_code == 0
-        assert "not yet implemented" in result.output.lower()
+        assert result.exit_code != 0
 
     def test_no_args_shows_help(self) -> None:
         result = runner.invoke(app, [])

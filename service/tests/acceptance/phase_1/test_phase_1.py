@@ -671,7 +671,9 @@ def test_cli_analyze_placeholder(tmp_path: Path) -> None:
 def test_cli_analyze_with_resume_option(tmp_path: Path) -> None:
     p = tmp_path / "posting.txt"
     p.write_text("x")
-    result = runner.invoke(app, ["analyze", str(p), "--resume", str(tmp_path / "r.txt")])
+    r = tmp_path / "r.txt"
+    r.write_text("x")
+    result = runner.invoke(app, ["analyze", str(p), "--resume", str(r)])
     assert result.exit_code == 0
 
 
