@@ -5,7 +5,9 @@ skill/dist/
 .DS_Store
 
 # Claude Code session data
-.claude/
+.claude/*
+!.claude/settings.json
+!.claude/agents/
 
 # Editor
 *.swp
@@ -13,5 +15,23 @@ skill/dist/
 .vscode/
 .idea/
 
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+htmlcov/
+
+# Env
+.env
+.env.*
+
 # Personal analysis files (one-off outputs, not part of the skill)
 skill-gap-analysis.html
+
+# Real user data (never commit)
+service/data/user/
+service/output/
