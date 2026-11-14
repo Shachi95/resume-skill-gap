@@ -1,0 +1,7 @@
+Senior Backend Engineer
+Zorblatt Dynamics is hiring a backend engineer.
+
+Requirements
+- Zorblatt Dynamics expects strong Kubernetes experience
+- Docker in production
+- Python services

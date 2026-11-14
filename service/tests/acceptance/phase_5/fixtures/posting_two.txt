@@ -1,0 +1,7 @@
+Platform Engineer
+Join the Zorblatt Dynamics platform team.
+
+Requirements
+- Kubernetes operations at scale
+- Terraform for infrastructure
+- Python tooling
