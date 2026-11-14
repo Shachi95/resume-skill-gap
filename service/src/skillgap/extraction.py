@@ -99,6 +99,8 @@ class AnthropicLLMClient:
             raise NonRetryableExtractionError(str(e)) from e
         except anthropic.APIConnectionError as e:
             raise RetryableExtractionError(str(e)) from e
+        except anthropic.AnthropicError as e:
+            raise NonRetryableExtractionError(str(e)) from e
 
         for block in response.content:
             if block.type == "tool_use" and block.name == _TOOL_NAME:
@@ -137,9 +139,9 @@ def _split(text: str) -> tuple[str, str]:
     return text[:mid], text[mid:]
 
 
-def _merge(results: list[ExtractionResult]) -> ExtractionResult:
-    alias_config, _ = load_config()
-    lookup = build_lookup(alias_config)
+def _merge(
+    results: list[ExtractionResult], lookup: dict[str, str], alias_config: AliasConfig
+) -> ExtractionResult:
     merged: dict[str, ExtractedSkill] = {}
     for result in results:
         for skill in result.skills:
@@ -157,6 +159,8 @@ def extract(
     *,
     client: LLMClient | None = None,
     config: ExtractionConfig | None = None,
+    lookup: dict[str, str] | None = None,
+    alias_config: AliasConfig | None = None,
 ) -> ExtractionResult:
     """Extract skills with the LLM, splitting oversized text into two calls."""
     cfg = config or ExtractionConfig()
@@ -164,7 +168,12 @@ def extract(
     if len(text) // 4 <= TOKEN_BUDGET:
         return _call_with_retry(llm, text, kind, cfg)
     first, second = _split(text)
-    return _merge([_call_with_retry(llm, part, kind, cfg) for part in (first, second)])
+    if alias_config is None:
+        alias_config, _ = load_config()
+    if lookup is None:
+        lookup = build_lookup(alias_config)
+    parts = [_call_with_retry(llm, part, kind, cfg) for part in (first, second)]
+    return _merge(parts, lookup, alias_config)
 
 
 _BULLET = re.compile(r"^\s*[-*•]\s")
@@ -252,7 +261,12 @@ def extract_verified(
         attempts = attempt
         try:
             result = extract(
-                _retry_text(text, previous, last_report), kind, client=client, config=cfg
+                _retry_text(text, previous, last_report),
+                kind,
+                client=client,
+                config=cfg,
+                lookup=lookup,
+                alias_config=alias_config,
             )
         except (LLMExtractionError, NonRetryableExtractionError) as e:
             logger.info("attempt %d: extraction failed: %s", attempt, e)

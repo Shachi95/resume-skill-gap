@@ -24,8 +24,9 @@ def _load_golden(path: Path) -> dict[str, Any] | None:
             data = yaml.safe_load(f)
         if data and data.get("reviewed"):
             return data  # type: ignore[no-any-return]
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"eval: WARNING — skipping {path.name}: {e}", file=sys.stderr)
+        return None
     return None
 
 
@@ -38,9 +39,7 @@ def _expected_skills(golden: dict[str, Any]) -> set[str]:
     return {e["skill"] for e in golden.get("expected", [])}
 
 
-def _precision_recall_f1(
-    expected: set[str], extracted: set[str]
-) -> dict[str, float]:
+def _precision_recall_f1(expected: set[str], extracted: set[str]) -> dict[str, float]:
     if not expected and not extracted:
         return {"precision": 1.0, "recall": 1.0, "f1": 1.0}
     if not extracted:
@@ -69,6 +68,11 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--format", choices=["json", "table"], default="table")
     args = parser.parse_args()
+    print(
+        "eval: NOTE — LLM path uses a dummy client (no recorded responses); "
+        "llm scores are 0, combined = dictionary fallback",
+        file=sys.stderr,
+    )
 
     golden_files = sorted(GOLDEN_DIR.glob("*.yaml"))
     if not golden_files:
@@ -97,6 +101,7 @@ def main() -> None:
     alias_config, _ = load_config()
     lookup = build_lookup(alias_config)
 
+    per_file: dict[str, dict[str, float]] = {}
     llm_scores: list[dict[str, float]] = []
     dict_scores: list[dict[str, float]] = []
     combined_scores: list[dict[str, float]] = []
@@ -104,9 +109,7 @@ def main() -> None:
     class _DictOnlyClient:
         """Returns empty result so extract() produces nothing from the LLM path."""
 
-        def extract_skills(
-            self, text: str, kind: str, config: object
-        ) -> Any:
+        def extract_skills(self, text: str, kind: str, config: object) -> Any:
             from skillgap.models import ExtractionResult
 
             return ExtractionResult(skills=())
@@ -140,7 +143,9 @@ def main() -> None:
             max_attempts=1,
         )
         combined_canonical = {s.canonical_name for s in combined_result.skills}
-        combined_scores.append(_precision_recall_f1(expected, combined_canonical))
+        file_scores = _precision_recall_f1(expected, combined_canonical)
+        combined_scores.append(file_scores)
+        per_file[gf_path.name] = file_scores
 
     results = {
         "llm": _aggregate(llm_scores),
@@ -149,8 +154,13 @@ def main() -> None:
     }
 
     if args.format == "json":
-        print(json.dumps(results, indent=2))
+        print(json.dumps({**results, "per_file": per_file}, indent=2))
     else:
+        print(f"{'File':<32} {'Precision':>10} {'Recall':>10} {'F1':>10}")
+        print("-" * 64)
+        for name, s in per_file.items():
+            print(f"{name:<32} {s['precision']:>10.4f} {s['recall']:>10.4f} {s['f1']:>10.4f}")
+        print()
         print(f"{'Path':<12} {'Precision':>10} {'Recall':>10} {'F1':>10}")
         print("-" * 44)
         for path_name in ("llm", "dictionary", "combined"):
