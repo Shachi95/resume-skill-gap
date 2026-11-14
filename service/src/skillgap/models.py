@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from datetime import date
 from enum import StrEnum
+from typing import Literal
 
 from pydantic import BaseModel, field_validator, model_validator
 
@@ -142,3 +143,39 @@ class RankedGap(BaseModel, frozen=True):
         if v < 1:
             raise ValueError("rank must be >= 1")
         return v
+
+
+class ExtractionResult(BaseModel, frozen=True):
+    skills: tuple[ExtractedSkill, ...]
+
+
+class AcceptedSkill(BaseModel, frozen=True):
+    skill: ExtractedSkill
+    canonical_name: str
+    category: Category
+
+
+class VerifyError(BaseModel, frozen=True):
+    skill_name: str
+    reason: Literal[
+        "evidence_not_in_text",
+        "skill_not_in_text",
+        "too_few_skills",
+        "too_many_skills",
+    ]
+    detail: str = ""
+
+
+class VerifyReport(BaseModel, frozen=True):
+    ok: bool
+    accepted: tuple[AcceptedSkill, ...]
+    candidates: tuple[ExtractedSkill, ...]
+    errors: tuple[VerifyError, ...]
+
+
+class VerifiedExtractionResult(BaseModel, frozen=True):
+    skills: tuple[AcceptedSkill, ...]
+    source: Literal["llm", "fallback"]
+    candidates: tuple[ExtractedSkill, ...] = ()
+    errors: tuple[VerifyError, ...] = ()
+    attempts: int = 1

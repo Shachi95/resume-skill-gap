@@ -21,4 +21,4 @@ verify-acceptance:
 	python scripts/acceptance_lock.py verify
 
 eval:
-	python evals/run.py
+	cd service && uv run python ../evals/run.py

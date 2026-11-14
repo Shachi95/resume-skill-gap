@@ -35,8 +35,25 @@ from skillgap.normalizer import build_lookup, normalize
 
 _NOT_IMPL = "Phase 4 not implemented"
 _NO_MODELS = "Phase 4 models not added"
-_xfail_impl = pytest.mark.xfail(strict=True, reason=_NOT_IMPL)
-_xfail_models = pytest.mark.xfail(strict=True, reason=_NO_MODELS)
+
+
+def _identity(cls: Any) -> Any:
+    return cls
+
+
+try:
+    from skillgap import extraction as _ext_mod  # noqa: F401
+
+    _xfail_impl: Any = _identity
+except ImportError:
+    _xfail_impl = pytest.mark.xfail(strict=True, reason=_NOT_IMPL)
+
+try:
+    from skillgap.models import ExtractionResult as _er_mod  # noqa: F401
+
+    _xfail_models: Any = _identity
+except (ImportError, AttributeError):
+    _xfail_models = pytest.mark.xfail(strict=True, reason=_NO_MODELS)
 
 _REPO_ROOT = Path(__file__).resolve().parents[4]
 _FIXTURES = Path(__file__).resolve().parents[2] / "fixtures"
