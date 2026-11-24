@@ -1,5 +1,10 @@
 # Changelog
 
+## 7.0.0 — 2026-11-24
+
+- **Phase 6 implemented:** FastAPI server (`/health`, `/analyze` with `X-API-Key` auth), MCP tool `analyze_gaps`, Dockerfile and compose file.
+- SKILL.md now uses the MCP tool when connected and falls back to in-session analysis.
+
 ## 6.0.0 — 2026-11-10
 
 - **Phase 3 implemented:** AI skill extraction with schema validation and grounding.

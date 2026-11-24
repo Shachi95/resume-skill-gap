@@ -1,0 +1,7 @@
+services:
+  skillgap:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      SKILLGAP_API_KEY: "${SKILLGAP_API_KEY:?set SKILLGAP_API_KEY}"

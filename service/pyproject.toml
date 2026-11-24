@@ -11,6 +11,9 @@ dependencies = [
     "trafilatura>=1.12,<2",
     "beautifulsoup4>=4.12,<5",
     "anthropic>=0.40,<1",
+    "fastapi>=0.165.0",
+    "uvicorn>=0.54.0",
+    "mcp>=1.2,<2",
 ]
 
 [project.optional-dependencies]

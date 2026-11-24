@@ -8,4 +8,4 @@
 | 3 | Done | 2026-11-10 | Extractor, grounding, retry logic; 56 acceptance tests pass (independent audit PASS), 0 bugs found |
 | 4 | Done | 2026-11-13 | Verified extraction pipeline: LLMClient Protocol, extract/verify/extract_verified/extract_dictionary, evals runner; 494 tests pass (2 skipped), dictionary F1=0.89, reviewer PASS (2 rounds) |
 | 5 | Done | 2026-11-13 | Report generation (JSON + HTML), CLI pipeline with --format json/html/both; 532 tests pass (2 skipped), reviewer skipped |
-| 6 | Not started | — | — |
+| 6 | Done | 2026-11-24 | FastAPI server, MCP tool, Docker, SKILL.md MCP fallback |
